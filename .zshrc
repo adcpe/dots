@@ -8,13 +8,13 @@ export ZSH="/home/adc/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="mortalscumbag"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
 # If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" "avit" "mortalscumbag" "pygmalion" "wezm")
+ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -98,8 +98,33 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# nvm stuff
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# rbenv stuff
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# z.sh https://github.com/rupa/z
+. ~/z.sh
+
+# powerlevel 9k https://github.com/Powerlevel9k/powerlevel9k/
+source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
+
+# tilix fix
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi
+
+# colorls stuff https://github.com/athityakumar/colorls
+alias ls="colorls -A --gs"
+alias ll="colorls -l  --gs"
+alias la="colorls -la --sd --gs"
+alias ld="colorls -d --gs"
+alias lf="colorls -f --gs"
+alias lr="colorls -r -gs"
+alias lsd="colorls --sd --gs"
+alias lsf="colorls --sf --gs"
+source $(dirname $(gem which colorls))/tab_complete.sh # LEAVE AT THE END
