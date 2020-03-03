@@ -3,3 +3,5 @@
 	email = andresdc@andresdc.net
 [color]
 	ui = auto
+[core]
+	editor = nvim
