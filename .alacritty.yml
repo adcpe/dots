@@ -14,7 +14,7 @@
 background_opacity: 0.95
 
 window:
-  columns: 100
+  columns: 120
   lines: 25
 
   position:
@@ -30,13 +30,14 @@ window:
   # - full: Borders and title bar
   # - none: Neither borders nor title bar
   decorations: none
+  # startup_mode: Maximized
 
 scrolling:
   history: 10000
   multiplier: 3
   auto_scroll: false
 
-tabspaces: 8
+tabspaces: 2
 
 font:
   normal:
@@ -62,7 +63,7 @@ colors:
   # Cursor colors
   cursor:
     text: '0xFF261E'
-    cursor: '0xFF261E'
+    cursor: '0xFFFFFF'
 
   # Normal colors
   normal:
@@ -220,9 +221,6 @@ mouse_bindings:
 #   - ReceiveChar
 #   - None
 #
-#   (macOS only):
-#   - ToggleSimpleFullscreen: Enters fullscreen without occupying another space
-#
 # - `command`: Fork and execute a specified command plus arguments
 #
 #    The `command` field must be a map containing a `program` string and an
@@ -272,11 +270,12 @@ key_bindings:
   - { key: Subtract, mods: Control,       action: DecreaseFontSize }
   - { key: Minus,    mods: Control,       action: DecreaseFontSize }
 
-  - { key: Paste,                    action: Paste                            }
-  - { key: Copy,                     action: Copy                             }
-  - { key: L,         mods: Control, action: ClearLogNotice                   }
-  - { key: L,         mods: Control, chars: "\x0c"                            }
-  - { key: PageUp,    mods: Shift,   action: ScrollPageUp,   mode: ~Alt       }
-  - { key: PageDown,  mods: Shift,   action: ScrollPageDown, mode: ~Alt       }
-  - { key: Home,      mods: Shift,   action: ScrollToTop,    mode: ~Alt       }
-  - { key: End,       mods: Shift,   action: ScrollToBottom, mode: ~Alt       }
+  - { key: Paste,                           action: Paste                            }
+  - { key: Copy,                            action: Copy                             }
+  - { key: L,         mods: Control,        action: ClearLogNotice                   }
+  - { key: L,         mods: Control,        chars: "\x0c"                            }
+  - { key: PageUp,    mods: Shift,          action: ScrollPageUp,   mode: ~Alt       }
+  - { key: PageDown,  mods: Shift,          action: ScrollPageDown, mode: ~Alt       }
+  - { key: Home,      mods: Shift,          action: ScrollToTop,    mode: ~Alt       }
+  - { key: End,       mods: Shift,          action: ScrollToBottom, mode: ~Alt       }
+  - { key: Return,    mods: Control|Shift,  action: SpawnNewInstance                 }
