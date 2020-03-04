@@ -29,7 +29,7 @@ window:
 
   # - full: Borders and title bar
   # - none: Neither borders nor title bar
-  decorations: none
+  decorations: full
   # startup_mode: Maximized
 
 scrolling:
