@@ -32,13 +32,8 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# z.sh https://github.com/rupa/z
-. ~/z.sh
-
-# p10k
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-source ~/.p10k
-alias rp10k="p10k reload"
+# colorize alias
+alias cat="ccat"
 
 # colorls stuff https://github.com/athityakumar/colorls
 alias ls="colorls --git-status -h"
