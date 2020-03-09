@@ -1,29 +1,21 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
-# Any items in the `env` entry below will be added as
-# environment variables. Some entries may override variables
-# set by alacritty itself.
-#env:
-  # TERM variable
-  #
-  # This value is used to set the `$TERM` environment variable for
-  # each instance of Alacritty. If it is not present, alacritty will
-  # check the local terminfo database and use `alacritty` if it is
-  # available, otherwise `xterm-256color` is used.
-  #TERM: xterm-256color
+env:
+  TERM: xterm-256color
+
 background_opacity: 0.95
 
 window:
   columns: 120
   lines: 25
 
-  position:
-    x: 850
-    y: 50
+  #  position:
+  #    x: 850
+  #    y: 50
 
   padding:
-    x: 5
-    y: 8
+    x: 2
+    y: 2
 
   dynamic_padding: true
 
@@ -40,61 +32,63 @@ scrolling:
 tabspaces: 2
 
 font:
+  size: 13.0
   normal:
-    # Font family
-    #
-    # Default:
-    #   - (macOS) Menlo
-    #   - (Linux/BSD) monospace
-    #   - (Windows) Consolas
-    family: Iosevka Term
+    family: SauceCodePro Nerd Font Mono
+    style: Medium
 
-  size: 12.0
+  bold:
+    style: Black
+  italic:
+    style: Italic
+  bold_italic:
+    style: Bold Italic
 
-draw_bold_text_with_bright_colors: true
-
-# Colors (Argonaut)
+# Base16 Atelier Sulphurpool Light 256 - alacritty color config
+# Bram de Haan (http://atelierbramdehaan.nl)
 colors:
   # Default colors
   primary:
-    background: '0x292C3E'
-    foreground: '0xEBEBEB'
+    background: '0xf5f7ff'
+    foreground: '0x5e6687'
 
-  # Cursor colors
+  # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0xFF261E'
-    cursor: '0xFFFFFF'
+    text: '0xf5f7ff'
+    cursor: '0x5e6687'
 
   # Normal colors
   normal:
-    black:   '0x0d0d0d'
-    red:     '0xFF301B'
-    green:   '0xA0E521'
-    yellow:  '0xFFC620'
-    blue:    '0x1BA6FA'
-    magenta: '0x8763B8'
-    cyan:    '0x21DEEF'
-    white:   '0xEBEBEB'
+    black:   '0xf5f7ff'
+    red:     '0xc94922'
+    green:   '0xac9739'
+    yellow:  '0xc08b30'
+    blue:    '0x3d8fd1'
+    magenta: '0x6679cc'
+    cyan:    '0x22a2c9'
+    white:   '0x5e6687'
 
   # Bright colors
   bright:
-    black:   '0x6D7070'
-    red:     '0xFF4352'
-    green:   '0xB8E466'
-    yellow:  '0xFFD750'
-    blue:    '0x1BA6FA'
-    magenta: '0xA578EA'
-    cyan:    '0x73FBF1'
-    white:   '0xFEFEF8'
+    black:   '0x898ea4'
+    red:     '0xc94922'
+    green:   '0xac9739'
+    yellow:  '0xc08b30'
+    blue:    '0x3d8fd1'
+    magenta: '0x6679cc'
+    cyan:    '0x22a2c9'
+    white:   '0x202746'
 
-# Visual Bell
-#
-# Any time the BEL code is received, Alacritty "rings" the visual bell. Once
-# rung, the terminal background will be set to white and transition back to the
-# default background color. You can control the rate of this transition by
-# setting the `duration` property (represented in milliseconds). You can also
-# configure the transition function by setting the `animation` property.
-#
+  indexed_colors:
+    - { index: 16, color: '0xc76b29' }
+    - { index: 17, color: '0x9c637a' }
+    - { index: 18, color: '0xdfe2f1' }
+    - { index: 19, color: '0x979db4' }
+    - { index: 20, color: '0x6b7394' }
+    - { index: 21, color: '0x293256' }
+
+draw_bold_text_with_bright_colors: true
+
 # Values for `animation`:
 #   - Ease
 #   - EaseOut
@@ -114,9 +108,6 @@ visual_bell:
   color: '0xffffff'
 
 cursor:
-  # Cursor style
-  #
-  # Values for `style`:
   #   - ▇ Block
   #   - _ Underline
   #   - | Beam
@@ -124,11 +115,6 @@ cursor:
   unfocused_hollow: false
 
 live_config_reload: true
-
-#shell:
-#  program: /bin/bash
-#  args:
-#    - --login
 
 mouse:
   double_click: { threshold: 300 }
@@ -260,22 +246,22 @@ mouse_bindings:
 # a no-op if you do not wish to receive input characters for that binding.
 key_bindings:
   # (Windows, Linux, and BSD only)
-  - { key: Q,        mods: Control|Shift, action: Quit             }
-  - { key: V,        mods: Control|Shift, action: Paste            }
-  - { key: C,        mods: Control|Shift, action: Copy             }
-  - { key: Insert,   mods: Shift,         action: PasteSelection   }
-  - { key: Key0,     mods: Control,       action: ResetFontSize    }
-  - { key: Equals,   mods: Control,       action: IncreaseFontSize }
-  - { key: Add,      mods: Control,       action: IncreaseFontSize }
-  - { key: Subtract, mods: Control,       action: DecreaseFontSize }
-  - { key: Minus,    mods: Control,       action: DecreaseFontSize }
+  - { key: V, mods: Control|Shift, action: Paste }
+  - { key: C, mods: Control|Shift, action: Copy }
+  - { key: Insert, mods: Shift, action: PasteSelection }
+  - { key: Key0, mods: Control, action: ResetFontSize }
+  - { key: Equals, mods: Control, action: IncreaseFontSize }
+  - { key: Add, mods: Control, action: IncreaseFontSize }
+  - { key: Subtract, mods: Control, action: DecreaseFontSize }
+  - { key: Minus, mods: Control, action: DecreaseFontSize }
 
-  - { key: Paste,                           action: Paste                            }
-  - { key: Copy,                            action: Copy                             }
-  - { key: L,         mods: Control,        action: ClearLogNotice                   }
-  - { key: L,         mods: Control,        chars: "\x0c"                            }
-  - { key: PageUp,    mods: Shift,          action: ScrollPageUp,   mode: ~Alt       }
-  - { key: PageDown,  mods: Shift,          action: ScrollPageDown, mode: ~Alt       }
-  - { key: Home,      mods: Shift,          action: ScrollToTop,    mode: ~Alt       }
-  - { key: End,       mods: Shift,          action: ScrollToBottom, mode: ~Alt       }
-  - { key: Return,    mods: Control|Shift,  action: SpawnNewInstance                 }
+  - { key: Paste, action: Paste }
+  - { key: Copy, action: Copy }
+  - { key: L, mods: Control, action: ClearLogNotice }
+  - { key: L, mods: Control, chars: "\x0c" }
+  - { key: PageUp, mods: Shift, action: ScrollPageUp, mode: ~Alt }
+  - { key: PageDown, mods: Shift, action: ScrollPageDown, mode: ~Alt }
+  - { key: Home, mods: Shift, action: ScrollToTop, mode: ~Alt }
+  - { key: End, mods: Shift, action: ScrollToBottom, mode: ~Alt }
+  - { key: Return, mods: Control|Shift, action: SpawnNewInstance }
+  - { key: Q, mods: Control|Shift, action: Quit }
