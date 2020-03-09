@@ -34,18 +34,30 @@ eval "$(rbenv init -)"
 # powerlevel 9k https://github.com/Powerlevel9k/powerlevel9k/
 source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
 
-# tilix fix
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-        source /etc/profile.d/vte.sh
-fi
-
 # colorls stuff https://github.com/athityakumar/colorls
-alias ls="colorls -A --gs"
-alias ll="colorls -l  --gs"
-alias la="colorls -la --sd --gs"
-alias ld="colorls -d --gs"
-alias lf="colorls -f --gs"
-alias lr="colorls -r -gs"
-alias lsd="colorls --sd --gs"
-alias lsf="colorls --sf --gs"
-source $(dirname $(gem which colorls))/tab_complete.sh # LEAVE AT THE END
+alias ls="colorls --git-status -h"
+alias la="ls -A"
+alias ll="ls -l"
+alias lr="ls --report"
+alias lsd="ls --sd"
+alias lsf="ls --sf"
+
+# pacman aliases
+alias pacs="sudo pacman -S"
+alias pacsyu="sudo pacman -Syu"
+alias install="sudo pacman -Syu"
+alias pacsyyu="sudo pacman -Syyu"
+alias pacr="sudo pacman -R"
+alias pacrns="sudo pacman -Rns"
+alias remove="sudo pacman -Rns"
+alias pacss="pacman -Ss"
+alias pacqs="pacman -Qs"
+alias pacsi="pacman -Si"
+alias pacql="pacman -Ql"
+alias pacsc="sudo pacman -Sc"
+alias pacscc="sudo pacman -Scc"
+alias pacrmorphans="sudo pacman -Rs $(pacman -Qdtq)"
+alias pacmfast="sudo pacman-mirrors -f && sudo pacman -Syyu"
+
+# trash-cli https://github.com/sindresorhus/trash-cli
+alias rm="trash"
