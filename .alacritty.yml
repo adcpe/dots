@@ -3,7 +3,7 @@
 env:
   TERM: xterm-256color
 
-background_opacity: 0.95
+background_opacity: 0.96
 
 window:
   columns: 120
@@ -32,60 +32,53 @@ scrolling:
 tabspaces: 2
 
 font:
-  size: 13.0
+  size: 12.5
   normal:
-    family: SauceCodePro Nerd Font Mono
+    family: Iosevka Term
     style: Medium
 
   bold:
-    style: Black
+    style: Bold
   italic:
     style: Italic
   bold_italic:
     style: Bold Italic
 
-# Base16 Atelier Sulphurpool Light 256 - alacritty color config
-# Bram de Haan (http://atelierbramdehaan.nl)
+
+# Gruvbox Material Light Soft - alacritty color config
+# by sainnhe https://github.com/sainnhe/gruvbox-material
 colors:
   # Default colors
   primary:
-    background: '0xf5f7ff'
-    foreground: '0x5e6687'
+    background: '0xf2e5bc'
+    foreground: '0x654735'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0xf5f7ff'
-    cursor: '0x5e6687'
+    text:   '0xf9f5d7'
+    cursor: '0x665c54'
 
   # Normal colors
   normal:
-    black:   '0xf5f7ff'
-    red:     '0xc94922'
-    green:   '0xac9739'
-    yellow:  '0xc08b30'
-    blue:    '0x3d8fd1'
-    magenta: '0x6679cc'
-    cyan:    '0x22a2c9'
-    white:   '0x5e6687'
+    black:   '0x654735'
+    red:     '0xc14a4a'
+    green:   '0x6c782e'
+    yellow:  '0xb47109'
+    blue:    '0x45707a'
+    magenta: '0x945e80'
+    cyan:    '0x4c7a5d'
+    white:   '0x928374'
 
   # Bright colors
   bright:
-    black:   '0x898ea4'
-    red:     '0xc94922'
-    green:   '0xac9739'
-    yellow:  '0xc08b30'
-    blue:    '0x3d8fd1'
-    magenta: '0x6679cc'
-    cyan:    '0x22a2c9'
-    white:   '0x202746'
-
-  indexed_colors:
-    - { index: 16, color: '0xc76b29' }
-    - { index: 17, color: '0x9c637a' }
-    - { index: 18, color: '0xdfe2f1' }
-    - { index: 19, color: '0x979db4' }
-    - { index: 20, color: '0x6b7394' }
-    - { index: 21, color: '0x293256' }
+    black:   '0x654735'
+    red:     '0xc14a4a'
+    green:   '0x6c782e'
+    yellow:  '0xb47109'
+    blue:    '0x45707a'
+    magenta: '0x945e80'
+    cyan:    '0x4c7a5d'
+    white:   '0x928374'
 
 draw_bold_text_with_bright_colors: true
 

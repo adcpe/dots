@@ -1,6 +1,4 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -9,6 +7,10 @@ TERM=xterm-256color
 
 # load antigen
 source ~/.antigenrc
+
+# p10k
+source ~/.p10k.zsh
+alias rp10k="p10k reload"
 
 HISTFILE=~/.histfile
 HISTSIZE=10000
@@ -19,6 +21,8 @@ bindkey -e
 zstyle :compinstall filename '/home/adc/.zshrc'
 autoload -Uz compinit
 compinit
+
+ZSH_AUTOSUGGEST_STRATEGY=(completion history)
 
 # source nerd fonts
 source ~/.local/share/fonts/i_all.sh
@@ -36,7 +40,7 @@ eval "$(rbenv init -)"
 alias cat="ccat"
 
 # colorls stuff https://github.com/athityakumar/colorls
-alias ls="colorls --git-status -h"
+alias ls="colorls --light --git-status -h"
 alias la="ls -A"
 alias ll="ls -l"
 alias lr="ls --report"

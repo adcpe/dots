@@ -4,13 +4,19 @@ antigen use oh-my-zsh
 
 antigen bundles <<EOBUNDLES
   colored-man-pages
+  colorize
   command-not-found
   git
   gitignore
   rand-quotes
   web-search
-  zsh-users/zsh-syntax-highlighting
   z
+  zsh-users/zsh-autosuggestions
+  zsh-users/zsh-completions
+  zsh-users/zsh-syntax-highlighting
+  zdharma/fast-syntax-highlighting
 EOBUNDLES
+
+antigen theme romkatv/powerlevel10k
 
 antigen apply
