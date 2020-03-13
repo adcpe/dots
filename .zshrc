@@ -5,8 +5,11 @@ fi
 
 TERM=xterm-256color
 
-# load antigen
+# load plugins
 source ~/.antigenrc
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # p10k
 source ~/.p10k.zsh
@@ -22,7 +25,10 @@ zstyle :compinstall filename '/home/adc/.zshrc'
 autoload -Uz compinit
 compinit
 
+# plugin settings
 ZSH_AUTOSUGGEST_STRATEGY=(completion history)
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 # source nerd fonts
 source ~/.local/share/fonts/i_all.sh

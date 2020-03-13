@@ -11,10 +11,6 @@ antigen bundles <<EOBUNDLES
   rand-quotes
   web-search
   z
-  zsh-users/zsh-autosuggestions
-  zsh-users/zsh-completions
-  zsh-users/zsh-syntax-highlighting
-  zdharma/fast-syntax-highlighting
 EOBUNDLES
 
 antigen theme romkatv/powerlevel10k
