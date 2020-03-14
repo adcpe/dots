@@ -25,10 +25,12 @@ zstyle :compinstall filename '/home/adc/.zshrc'
 autoload -Uz compinit
 compinit
 
-# plugin settings
 ZSH_AUTOSUGGEST_STRATEGY=(completion history)
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+
+# homebrew
+[ -d /home/linuxbrew/.linuxbrew ] && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
 # source nerd fonts
 source ~/.local/share/fonts/i_all.sh
