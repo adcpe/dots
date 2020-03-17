@@ -7,9 +7,6 @@ TERM=xterm-256color
 
 # load plugins
 source ~/.antigenrc
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # p10k
 source ~/.p10k.zsh
@@ -30,10 +27,7 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
 # homebrew
-[ -d /home/linuxbrew/.linuxbrew ] && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-
-# source nerd fonts
-source ~/.local/share/fonts/i_all.sh
+# [ -d /home/linuxbrew/.linuxbrew ] && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
 # nvm stuff
 export NVM_DIR="$HOME/.nvm"
@@ -41,11 +35,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # rbenv stuff
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init -)"
 
 # colorize alias
-alias cat="ccat"
+# alias cat="ccat"
 
 # colorls stuff https://github.com/athityakumar/colorls
 alias ls="colorls --light --git-status -h"
@@ -56,21 +50,21 @@ alias lsd="ls --sd"
 alias lsf="ls --sf"
 
 # pacman aliases
-alias pacs="sudo pacman -S"
-alias pacsyu="sudo pacman -Syu"
-alias install="sudo pacman -Syu"
-alias pacsyyu="sudo pacman -Syyu"
-alias pacr="sudo pacman -R"
-alias pacrns="sudo pacman -Rns"
-alias remove="sudo pacman -Rns"
-alias pacss="pacman -Ss"
-alias pacqs="pacman -Qs"
-alias pacsi="pacman -Si"
-alias pacql="pacman -Ql"
-alias pacsc="sudo pacman -Sc"
-alias pacscc="sudo pacman -Scc"
-alias pacrmorphans="sudo pacman -Rs $(pacman -Qdtq)"
-alias pacmfast="sudo pacman-mirrors -f && sudo pacman -Syyu"
+# alias pacs="sudo pacman -S"
+# alias pacsyu="sudo pacman -Syu"
+# alias install="sudo pacman -Syu"
+# alias pacsyyu="sudo pacman -Syyu"
+# alias pacr="sudo pacman -R"
+# alias pacrns="sudo pacman -Rns"
+# alias remove="sudo pacman -Rns"
+# alias pacss="pacman -Ss"
+# alias pacqs="pacman -Qs"
+# alias pacsi="pacman -Si"
+# alias pacql="pacman -Ql"
+# alias pacsc="sudo pacman -Sc"
+# alias pacscc="sudo pacman -Scc"
+# alias pacrmorphans="sudo pacman -Rs $(pacman -Qdtq)"
+# alias pacmfast="sudo pacman-mirrors -f && sudo pacman -Syyu"
 
 # trash-cli https://github.com/sindresorhus/trash-cli
 alias rm="trash"
