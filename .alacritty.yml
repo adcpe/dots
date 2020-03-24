@@ -6,12 +6,12 @@ env:
 background_opacity: 0.96
 
 window:
-  columns: 120
-  lines: 25
+  # columns: 80
+  # lines: 26
 
-  #  position:
-  #    x: 850
-  #    y: 50
+  position:
+    x: 20
+    y: 60
 
   padding:
     x: 2
@@ -32,7 +32,7 @@ scrolling:
 tabspaces: 2
 
 font:
-  size: 12.5
+  size: 12
   normal:
     family: Iosevka Term
     style: Medium
@@ -45,42 +45,34 @@ font:
     style: Bold Italic
 
 
-# Gruvbox Material Light Soft - alacritty color config
-# by sainnhe https://github.com/sainnhe/gruvbox-material
+# Colors (Nord)
 colors:
   # Default colors
   primary:
-    background: '0xf2e5bc'
-    foreground: '0x654735'
-
-  # Colors the cursor will use if `custom_cursor_colors` is true
-  cursor:
-    text:   '0xf9f5d7'
-    cursor: '0x665c54'
+    background: '0x2E3440'
+    foreground: '0xD8DEE9'
 
   # Normal colors
   normal:
-    black:   '0x654735'
-    red:     '0xc14a4a'
-    green:   '0x6c782e'
-    yellow:  '0xb47109'
-    blue:    '0x45707a'
-    magenta: '0x945e80'
-    cyan:    '0x4c7a5d'
-    white:   '0x928374'
+    black:   '0x3B4252'
+    red:     '0xBF616A'
+    green:   '0xA3BE8C'
+    yellow:  '0xEBCB8B'
+    blue:    '0x81A1C1'
+    magenta: '0xB48EAD'
+    cyan:    '0x88C0D0'
+    white:   '0xE5E9F0'
 
   # Bright colors
   bright:
-    black:   '0x654735'
-    red:     '0xc14a4a'
-    green:   '0x6c782e'
-    yellow:  '0xb47109'
-    blue:    '0x45707a'
-    magenta: '0x945e80'
-    cyan:    '0x4c7a5d'
-    white:   '0x928374'
-
-draw_bold_text_with_bright_colors: true
+    black:   '0x4C566A'
+    red:     '0xBF616A'
+    green:   '0xA3BE8C'
+    yellow:  '0xEBCB8B'
+    blue:    '0x81A1C1'
+    magenta: '0xB48EAD'
+    cyan:    '0x8FBCBB'
+    white:   '0xECEFF4'
 
 # Values for `animation`:
 #   - Ease

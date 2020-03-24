@@ -42,7 +42,7 @@ export NVM_DIR="$HOME/.nvm"
 # alias cat="ccat"
 
 # colorls stuff https://github.com/athityakumar/colorls
-alias ls="colorls --light --git-status -h"
+alias ls="colorls --git-status -h"
 alias la="ls -A"
 alias ll="ls -l"
 alias lr="ls --report"
