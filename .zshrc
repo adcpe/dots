@@ -35,11 +35,14 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # rbenv stuff
-# export PATH="$HOME/.rbenv/bin:$PATH"
-# eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# VSCODIUM
+alias code="codium"
 
 # colorize alias
-# alias cat="ccat"
+alias cat="ccat"
 
 # colorls stuff https://github.com/athityakumar/colorls
 alias ls="colorls --git-status -h"
@@ -50,21 +53,21 @@ alias lsd="ls --sd"
 alias lsf="ls --sf"
 
 # pacman aliases
-# alias pacs="sudo pacman -S"
-# alias pacsyu="sudo pacman -Syu"
-# alias install="sudo pacman -Syu"
-# alias pacsyyu="sudo pacman -Syyu"
-# alias pacr="sudo pacman -R"
-# alias pacrns="sudo pacman -Rns"
-# alias remove="sudo pacman -Rns"
-# alias pacss="pacman -Ss"
-# alias pacqs="pacman -Qs"
-# alias pacsi="pacman -Si"
-# alias pacql="pacman -Ql"
-# alias pacsc="sudo pacman -Sc"
-# alias pacscc="sudo pacman -Scc"
-# alias pacrmorphans="sudo pacman -Rs $(pacman -Qdtq)"
-# alias pacmfast="sudo pacman-mirrors -f && sudo pacman -Syyu"
+alias pacs="sudo pacman -S"
+alias pacsyu="sudo pacman -Syu"
+alias install="sudo pacman -Syu"
+alias pacsyyu="sudo pacman -Syyu"
+alias pacr="sudo pacman -R"
+alias pacrns="sudo pacman -Rns"
+alias remove="sudo pacman -Rns"
+alias pacss="pacman -Ss"
+alias pacqs="pacman -Qs"
+alias pacsi="pacman -Si"
+alias pacql="pacman -Ql"
+alias pacsc="sudo pacman -Sc"
+alias pacscc="sudo pacman -Scc"
+alias pacrmorphans="sudo pacman -Rs $(pacman -Qdtq)"
+alias pacmfast="sudo pacman-mirrors -f && sudo pacman -Syyu"
 
 # trash-cli https://github.com/sindresorhus/trash-cli
 alias rm="trash"

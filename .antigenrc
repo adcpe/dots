@@ -8,7 +8,6 @@ antigen bundles <<EOBUNDLES
   command-not-found
   git
   gitignore
-  web-search
   z
   zsh-users/zsh-autosuggestions
   zsh-users/zsh-history-substring-search
