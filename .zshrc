@@ -35,8 +35,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # rbenv stuff
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init -)"
 
 # VSCODIUM
 alias code="codium"
@@ -51,6 +51,7 @@ alias ll="ls -l"
 alias lr="ls --report"
 alias lsd="ls --sd"
 alias lsf="ls --sf"
+export PATH=$PATH:/home/adc/.gem/ruby/2.7.0/bin
 
 # pacman aliases
 alias pacs="sudo pacman -S"

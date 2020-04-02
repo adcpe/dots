@@ -9,8 +9,6 @@ antigen bundles <<EOBUNDLES
   git
   gitignore
   z
-  zsh-users/zsh-autosuggestions
-  zsh-users/zsh-history-substring-search
 EOBUNDLES
 
 antigen theme romkatv/powerlevel10k
