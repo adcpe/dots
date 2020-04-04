@@ -33,6 +33,9 @@ source $ZSH/oh-my-zsh.sh
 # p10k
 source ~/.p10k.zsh
 
+# dotfiles config alias
+alias dots='/usr/bin/git --git-dir=$HOME/dots.git/ --work-tree=$HOME'
+
 # nvm stuff
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
