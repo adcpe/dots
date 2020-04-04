@@ -45,7 +45,7 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# VSCODIUM
+# VSCODE
 alias code="code-oss"
 
 # colorize alias
