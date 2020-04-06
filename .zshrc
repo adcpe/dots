@@ -45,6 +45,7 @@ alias code="code-oss"
 
 # colorize alias
 alias cat="ccat"
+ZSH_COLORIZE_STYLE="paraiso-dark"
 
 # colorls stuff https://github.com/athityakumar/colorls
 alias ls="colorls --git-status -h"
