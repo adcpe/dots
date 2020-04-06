@@ -14,12 +14,23 @@ Rows=1
 [DrmOutputs][e8a7538a38][e8a7538a38]
 Scale=1
 
+[Effect-CoverSwitch]
+TabBox=false
+TabBoxAlternative=false
+
+[Effect-FlipSwitch]
+TabBox=false
+TabBoxAlternative=false
+
 [NightColor]
 Mode=Constant
 NightTemperature=4000
 
 [Plugins]
+coverswitchEnabled=true
 desktopchangeosdEnabled=true
+flipswitchEnabled=true
+highlightwindowEnabled=true
 kwin4_effect_fadedesktopEnabled=true
 slideEnabled=false
 
@@ -30,6 +41,30 @@ TextOnly=true
 [SubSession: 69367dc0-5b40-48de-9588-b855d2dd3b9b]
 active=-1
 count=0
+
+[TabBox]
+ActivitiesMode=1
+ApplicationsMode=0
+DesktopMode=1
+HighlightWindows=true
+LayoutName=big_icons
+MinimizedMode=0
+MultiScreenMode=0
+ShowDesktopMode=0
+ShowTabBox=true
+SwitchingMode=0
+
+[TabBoxAlternative]
+ActivitiesMode=1
+ApplicationsMode=0
+DesktopMode=1
+HighlightWindows=true
+LayoutName=org.kde.breeze.desktop
+MinimizedMode=0
+MultiScreenMode=0
+ShowDesktopMode=0
+ShowTabBox=true
+SwitchingMode=0
 
 [org.kde.kdecoration2]
 ButtonsOnLeft=MF
