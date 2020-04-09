@@ -1,4 +1,4 @@
-git clone --bare git@github.com:echounit1/dots.git $HOME/dots.git
+git clone --bare https://github.com/echounit1/dots.git $HOME/dots.git
 function dots {
   /usr/bin/git --git-dir=$HOME/dots.git/ --work-tree=$HOME $@
 }
