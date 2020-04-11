@@ -1,0 +1,39 @@
+# dotfiles git repo config alias
+alias dots='/usr/bin/git --git-dir=$HOME/.dots-git/ --work-tree=$HOME'
+
+# VSCODE
+alias code="code-oss"
+
+# colorize alias
+alias cat="ccat"
+ZSH_COLORIZE_STYLE="paraiso-dark"
+
+# colorls stuff https://github.com/athityakumar/colorls
+alias ls="colorls --git-status -h"
+alias la="ls -A"
+alias ll="ls -l"
+alias lr="ls --report"
+alias lsd="ls --sd"
+alias lsf="ls --sf"
+
+# pacman aliases
+alias pacs="sudo pacman -S"
+alias install="sudo pacman -S"
+alias pacsyu="sudo pacman -Syu"
+alias pacr="sudo pacman -R"
+alias pacrns="sudo pacman -Rns"
+alias remove="sudo pacman -Rns"
+alias pacss="pacman -Ss"
+alias pacqs="pacman -Qs"
+alias pacsi="pacman -Si"
+alias pacqi="pacman -Qi"
+alias pacql="pacman -Ql"
+alias pacsc="sudo pacman -Sc"
+alias pacscc="sudo pacman -Scc"
+alias pacrmorphans="sudo pacman -Rs $(pacman -Qdtq)"
+
+# reflector simplified
+alias pacreflect="sudo reflector --verbose --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syyu"
+
+# trash-cli https://github.com/sindresorhus/trash-cli
+alias rm="trash"
