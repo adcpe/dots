@@ -1,9 +1,12 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
+switch-to-activity-27723b78-bab3-43c0-b7ca-c753f93cdb01=none,none,Switch to activity "Default"
 switch-to-activity-f4979973-cd2f-49b3-bf23-ea167806d320=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
 Switch keyboard layout to English (US)=none,none,Switch keyboard layout to English (US)
+Switch keyboard layout to English (US, international AltGr Unicode combining)=none,none,Switch keyboard layout to English (US\\, international AltGr Unicode combining)
+Switch keyboard layout to English (US, intl., with dead keys)=none,none,Switch keyboard layout to English (US\\, intl.\\, with dead keys)
 Switch keyboard layout to English (intl., with AltGr dead keys)=none,none,Switch keyboard layout to English (intl.\\, with AltGr dead keys)
 Switch to Next Keyboard Layout=Ctrl+Alt+K,Ctrl+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=KDE Daemon
@@ -246,7 +249,9 @@ activate task manager entry 6=Meta+6,Meta+6,Activate Task Manager Entry 6
 activate task manager entry 7=Meta+7,Meta+7,Activate Task Manager Entry 7
 activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
-activate widget 30=Alt+F1,none,Activate Application Menu Widget
+activate widget 16=Alt+F1,none,Activate Application Menu Widget
+activate widget 17=none,none,Activate Icons-only Task Manager Widget
+activate widget 30=,none,Activate Application Menu Widget
 clear-history=none,none,Clear Clipboard History
 clipboard_action=Ctrl+Alt+X,Ctrl+Alt+X,Enable Clipboard Actions
 cycleNextAction=none,none,Next History Item

@@ -45,6 +45,8 @@ count=0
 [TabBox]
 ActivitiesMode=1
 ApplicationsMode=0
+DesktopLayout=org.kde.breeze.desktop
+DesktopListLayout=org.kde.breeze.desktop
 DesktopMode=1
 HighlightWindows=true
 LayoutName=big_icons
@@ -69,3 +71,5 @@ SwitchingMode=0
 [org.kde.kdecoration2]
 ButtonsOnLeft=MF
 ButtonsOnRight=IAX
+library=org.kde.breeze
+theme=Breeze

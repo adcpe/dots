@@ -107,10 +107,10 @@ ColorScheme=Breeze
 Name=Breeze
 font=Noto Sans,11,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
-widgetStyle=Breeze
+widgetStyle=breeze
 
 [Icons]
-Theme=breeze-dark
+Theme=breeze
 
 [KDE]
 ShowIconsInMenuItems=true
