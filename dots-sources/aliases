@@ -32,8 +32,5 @@ alias pacsc="sudo pacman -Sc"
 alias pacscc="sudo pacman -Scc"
 alias pacrmorphans="sudo pacman -Rs $(pacman -Qdtq)"
 
-# reflector simplified
-alias pacreflect="sudo reflector --verbose --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syyu"
-
 # trash-cli https://github.com/sindresorhus/trash-cli
 alias rm="trash"
