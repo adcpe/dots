@@ -1,5 +1,10 @@
 # dotfiles git repo config alias
 alias dots='/usr/bin/git --git-dir=$HOME/.dots-git/ --work-tree=$HOME'
+alias daa='dots add'
+alias ddif='dots diff'
+alias dst='dots status'
+alias dpom='dots push origin master'
+alias dcom='dots commit'
 
 # VSCODE
 alias code="code-oss"
