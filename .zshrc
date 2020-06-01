@@ -21,15 +21,16 @@ plugins=(
   zsh-completions 
 )
 autoload -U compinit && compinit
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
 
 source $ZSH/oh-my-zsh.sh
 # end of oh-my-zsh stuff
 
-[ -f "$HOME/dots-sources/nvm" ] && source "$HOME/dots-sources/nvm"
-[ -f "$HOME/dots-sources/rbenv" ] && source "$HOME/dots-sources/rbenv"
-[ -f "$HOME/dots-sources/path" ] && source "$HOME/dots-sources/path"
-[ -f "$HOME/dots-sources/aliases" ] && source "$HOME/dots-sources/aliases"
+source "$HOME/dots-sources/path"
+source "$HOME/dots-sources/nvm"
+source "$HOME/dots-sources/rbenv"
+source "$HOME/dots-sources/aliases"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
