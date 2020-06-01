@@ -1,7 +1,7 @@
 [Appearance]
 BoldIntense=false
 ColorScheme=Nordic
-Font=TerminessTTF NF,13,-1,5,75,0,0,0,0,0,Bold
+Font=TerminessTTF NF,12.5,-1,5,75,0,0,0,0,0,Bold
 
 [Cursor Options]
 CursorShape=1
@@ -11,7 +11,7 @@ Name=adc
 Parent=FALLBACK/
 
 [Scrolling]
-HistorySize=750
+HistorySize=1000
 
 [Terminal Features]
 BlinkingCursorEnabled=false
