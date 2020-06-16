@@ -32,13 +32,12 @@ TabBoxAlternative=false
 
 [Effect-PresentWindows]
 BorderActivate=9
-BorderActivateAll=7
+BorderActivateAll=9
 BorderActivateClass=9
 
 [ElectricBorders]
 Bottom=None
 BottomLeft=None
-BottomRight=ShowDesktop
 Left=None
 Right=None
 Top=None
