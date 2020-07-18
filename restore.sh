@@ -1,4 +1,4 @@
-git clone --bare https://gitlab.com/andres-dc/dots/-/raw/master/restore.sh $HOME/.dots-git
+git clone --bare https://gitlab.com/andres-dc/dots.git $HOME/.dots-git
 
 function dots {
   /usr/bin/git --git-dir=$HOME/.dots-git/ --work-tree=$HOME $@
@@ -16,7 +16,7 @@ fi;
 
 dots checkout
 dots config status.showUntrackedFiles no
-dots remote set-url origin git@github.com:andres-dc/dots.git
+dots remote set-url origin git@gitlab.com:andres-dc/dots.git
 
 # configure oh my zsh and plugins
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
