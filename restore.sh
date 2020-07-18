@@ -1,4 +1,4 @@
-git clone --bare https://github.com/andres-dc/dots.git $HOME/.dots-git
+git clone --bare https://gitlab.com/andres-dc/dots/-/raw/master/restore.sh $HOME/.dots-git
 
 function dots {
   /usr/bin/git --git-dir=$HOME/.dots-git/ --work-tree=$HOME $@
