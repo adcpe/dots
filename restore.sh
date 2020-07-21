@@ -18,8 +18,3 @@ dots checkout
 dots config status.showUntrackedFiles no
 dots remote set-url origin git@gitlab.com:andres-dc/dots.git
 
-# configure oh my zsh and plugins
-git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/themes/powerlevel10k
-git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/plugins/zsh-completions
-git clone https://github.com/zsh-users/zsh-history-substring-search ~/.oh-my-zsh/plugins/zsh-history-substring-search
