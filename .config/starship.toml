@@ -1,0 +1,46 @@
+add_newline = false
+
+[character]
+symbol = "❯"
+use_symbol_for_status = true
+style_success = "bold green"
+style_failure = "bold red"
+
+[package]
+disabled = true
+
+[line_break]
+disabled = true
+
+[directory]
+truncation_length = 0
+truncate_to_repo = false
+prefix = ""
+style = "bold cyan"
+use_logical_path = true
+fish_style_pwd_dir_length = 1
+
+[directory.substitutions]
+"/home/adc/path" = "~/"
+
+[git_branch]
+symbol = " "
+
+[nodejs]
+disabled = true
+
+[ruby]
+disabled = true
+
+prompt_order = [
+    "username",
+    "hostname",
+    "directory",
+    "git_branch",
+    "git_commit",
+    "git_state",
+    "git_status",
+    "hg_branch",
+    "cmd_duration",
+    "character",
+]
