@@ -1,0 +1,41 @@
+alias vim='nvim'
+alias vi='nvim'
+alias cra='npx create-react-app'
+
+# dotfiles git repo
+alias dots='/usr/bin/git --git-dir=$HOME/.dots-git/ --work-tree=$HOME'
+alias daa='dots add'
+alias ddif='dots diff'
+alias dst='dots status'
+alias dpom='dots push origin master'
+alias dcom='dots commit'
+
+alias code='code-oss'
+alias cat='bat --theme base16'
+
+alias ls='colorls --light --git-status --sort-dirs'
+alias la='ls -a'
+alias laa='ls -A'
+alias lsd='ls -d'
+alias lsf='ls -f'
+alias ll='ls -l'
+alias ld='ls -d'
+
+# pacman aliases
+alias pacs='sudo pacman -Syu'
+alias install='sudo pacman -Syu'
+alias pacsyu='sudo pacman -Syu'
+alias pacr='sudo pacman -R'
+alias pacrns='sudo pacman -Rns'
+alias remove='sudo pacman -Rns'
+alias pacss='pacman -Ss'
+alias pacqs='pacman -Qs'
+alias pacsi='pacman -Si'
+alias pacqi='pacman -Qi'
+alias pacql='pacman -Ql'
+alias pacsc='sudo pacman -Sc' # clear cache
+alias pacscc='sudo pacman -Scc'
+alias pacrmorphans='sudo pacman -Rs (pacman -Qdtq)'
+
+# trash-cli https://github.com/sindresorhus/trash-cli
+alias rm='trash'
