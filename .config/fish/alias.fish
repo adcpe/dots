@@ -13,13 +13,9 @@ alias dcom='dots commit'
 alias code='code-oss'
 alias cat='bat --theme base16'
 
-alias ls='colorls --light --git-status --sort-dirs'
+alias ls='exa --group-directories-first'
 alias la='ls -a'
-alias laa='ls -A'
-alias lsd='ls -d'
-alias lsf='ls -f'
 alias ll='ls -l'
-alias ld='ls -d'
 
 # pacman aliases
 alias pacs='sudo pacman -Syu'
