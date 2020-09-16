@@ -10,7 +10,7 @@
 Install config tracking in your \$HOME by running:
 
 ```
-curl -Lks https://gitlab.com/andres-dc/dots/-/raw/master/restore.sh | /bin/bash
+curl -Lk https://gitlab.com/andres-dc/dots/-/raw/main/.restore | /bin/bash
 ```
 
 ## Git commands
