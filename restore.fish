@@ -1,3 +1,4 @@
+rm $HOME/.dots-git
 git clone --bare https://gitlab.com/andres-dc/dots.git $HOME/.dots-git
 
 function conf
