@@ -1,5 +1,5 @@
+source /opt/asdf-vm/asdf.fish
 source ~/.config/fish/alias.fish
-source ~/.asdf/asdf.fish
 source ~/.asdf/installs/rust/1.44.1/env
 
 fish_vi_key_bindings
