@@ -7,7 +7,7 @@ alias dots='/usr/bin/git --git-dir=$HOME/.dots-git/ --work-tree=$HOME'
 alias daa='dots add'
 alias ddif='dots diff'
 alias dst='dots status'
-alias dpom='dots push origin master'
+alias dpom='dots push origin main'
 alias dcom='dots commit'
 
 alias code='code-oss'
