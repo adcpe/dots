@@ -31,7 +31,7 @@ alias pacqi='pacman -Qi'
 alias pacql='pacman -Ql'
 alias pacsc='sudo pacman -Sc' # clear cache
 alias pacscc='sudo pacman -Scc'
-alias pacrmorphans='sudo pacman -Rs (pacman -Qdtq)'
+alias paco='sudo pacman -Rs (pacman -Qdtq)'
 
 # trash-cli https://github.com/sindresorhus/trash-cli
 alias rm='trash'
