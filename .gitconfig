@@ -2,7 +2,7 @@
 	name = Andrés Del Carpio
 	email = andresdc@andresdc.net
 [core]
-	editor = nvim
+	editor = nano
 [color]
     ui = true
 
