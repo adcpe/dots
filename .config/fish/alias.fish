@@ -10,6 +10,7 @@ alias dst='dots status'
 alias dpom='dots push origin main'
 alias dcom='dots commit'
 
+alias c='code-oss'
 alias code='code-oss'
 alias cat='bat --theme base16'
 
