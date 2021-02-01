@@ -1,4 +1,4 @@
-source /opt/asdf-vm/asdf.fish
+source ~/.asdf/asdf.fish
 source ~/.config/fish/alias.fish
 
 fish_vi_key_bindings
