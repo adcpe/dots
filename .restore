@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # dots directory
 dir=$HOME/.dots-git/
 
