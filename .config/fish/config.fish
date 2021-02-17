@@ -7,8 +7,8 @@ set fish_cursor_insert line
 set fish_cursor_replace_one underscore
 set fish_cursor_visual block
 
-set EDITOR vim
-set VISUAL vim
+set EDITOR nano
+set VISUAL nano
 set XDG_CONFIG_HOME ~/.config
 
 starship init fish | source
