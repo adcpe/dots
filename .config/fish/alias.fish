@@ -1,9 +1,7 @@
-alias vim='nvim'
-alias vi='nvim'
 alias cra='npx create-react-app'
 
 # dotfiles git repo
-alias dots='/usr/bin/git --git-dir=$HOME/.dots-git/ --work-tree=$HOME'
+alias dots='git --git-dir=$HOME/.dots-git/ --work-tree=$HOME'
 alias daa='dots add'
 alias ddif='dots diff'
 alias dst='dots status'
@@ -11,7 +9,6 @@ alias dpom='dots push origin main'
 alias dcom='dots commit'
 
 alias c='code'
-alias code='code'
 alias cat='bat --theme base16'
 
 alias ls='exa --group-directories-first'
