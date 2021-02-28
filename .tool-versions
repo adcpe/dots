@@ -1,4 +1,4 @@
-nodejs 14.15.4 system
+nodejs 14.16.0
 ruby 2.6.6 system
 python 3.9.1 2.7.18 system
 rust 1.44.1 system
