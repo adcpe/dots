@@ -2,21 +2,18 @@
 	name = Andrés Del Carpio
 	email = andresdc@andresdc.net
 [core]
-	editor = nano
+	editor = kwrite
 [color]
     ui = true
-
 [color "branch"]
     current = yellow reverse
     local = yellow
     remote = green
-
 [color "diff"]
     meta = yellow bold
     frag = magenta bold
     old = red bold
     new = green bold
-
 [color "status"]
     added = yellow
     changed = green
