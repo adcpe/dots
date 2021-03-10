@@ -25,12 +25,6 @@ fish_style_pwd_dir_length = 1
 [git_branch]
 symbol = " "
 
-[nodejs]
-disabled = true
-
-[ruby]
-disabled = true
-
 format = """\
     $username\
     $hostname\
