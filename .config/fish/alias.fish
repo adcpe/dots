@@ -16,7 +16,7 @@ alias la='ls -a'
 alias ll='ls -l'
 
 # pacman aliases
-alias pacs='sudo pacman -Syu'
+alias pacs='sudo pacman -S'
 alias install='sudo pacman -Syu'
 alias pacsyu='sudo pacman -Syu'
 alias pacsyyu='sudo pacman -Syyu'
