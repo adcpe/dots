@@ -9,9 +9,9 @@ alias dpom='dots push origin main'
 alias dcom='dots commit'
 
 alias c='code'
-alias cat='bat --theme base16'
+alias cat='batcat --theme base16'
 
-alias ls='exa --group-directories-first'
+# alias ls='exa --group-directories-first'
 alias la='ls -a'
 alias ll='ls -l'
 
