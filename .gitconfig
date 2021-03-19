@@ -2,7 +2,7 @@
 	name = Andrés Del Carpio
 	email = andresdc@andresdc.net
 [core]
-	editor = kwrite
+	editor = kate
 [color]
     ui = true
 [color "branch"]
