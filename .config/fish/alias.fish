@@ -1,4 +1,5 @@
 alias cra='npx create-react-app'
+alias ssh="kitty +kitten ssh"
 
 # dotfiles git repo
 alias dots='git --git-dir=$HOME/.dots-git/ --work-tree=$HOME'
@@ -9,20 +10,17 @@ alias dpom='dots push origin main'
 alias dcom='dots commit'
 
 alias c='code'
-alias cat='batcat --theme base16'
+alias cat='bat --theme base16'
 
-# alias ls='exa --group-directories-first'
+alias ls='exa --group-directories-first'
 alias la='ls -a'
 alias ll='ls -l'
 
 # pacman aliases
-alias pacs='sudo pacman -S'
-alias install='sudo pacman -Syu'
-alias pacsyu='sudo pacman -Syu'
-alias pacsyyu='sudo pacman -Syyu'
-alias pacr='sudo pacman -R'
-alias pacrns='sudo pacman -Rns'
+alias install='sudo pacman -S'
+alias upgrade='sudo pacman -Syu'
 alias remove='sudo pacman -Rns'
+alias pacsyyu='sudo pacman -Syyu'
 alias pacss='pacman -Ss'
 alias pacqs='pacman -Qs'
 alias pacsi='pacman -Si'
