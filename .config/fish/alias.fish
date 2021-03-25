@@ -17,18 +17,16 @@ alias la='ls -a'
 alias ll='ls -l'
 
 # pacman aliases
-alias install='sudo pacman -S'
-alias upgrade='sudo pacman -Syu'
-alias remove='sudo pacman -Rns'
-alias pacsyyu='sudo pacman -Syyu'
-alias pacss='pacman -Ss'
-alias pacqs='pacman -Qs'
-alias pacsi='pacman -Si'
-alias pacqi='pacman -Qi'
-alias pacql='pacman -Ql'
-alias pacsc='sudo pacman -Sc' # clear cache
-alias pacscc='sudo pacman -Scc'
-alias paco='sudo pacman -Rs (pacman -Qdtq)'
+alias paci='sudo pacman -S'
+alias pacun='sudo pacman -Rns'
+alias pacu='sudo pacman -Syu'
+alias pacup='sudo pacman -Syyu'
+alias pacro='sudo pacman -Rns (pacman -Qdtq)'
+alias pacs='pacman -Ss'
+alias pacsl='pacman -Qs'
+alias paccc='pacman -Sc'
+alias paclo='pacman -Qdt'
+alias pacinfo='pacman -Si'
 
 # trash-cli https://github.com/sindresorhus/trash-cli
 alias rm='trash'
