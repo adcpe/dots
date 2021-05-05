@@ -1,8 +1,8 @@
 [user]
-	name = Andrés Del Carpio
-	email = andresdc@andresdc.net
+    name = Andrés Del Carpio
+    email = andresdc@andresdc.net
 [core]
-	editor = nano
+    editor = nano
 [color]
     ui = true
 [color "branch"]
@@ -19,8 +19,8 @@
     changed = green
     untracked = red
 [credential]
-	helper = store
+    helper = store
 [alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [init]
-	defaultBranch = main
+    defaultBranch = main
