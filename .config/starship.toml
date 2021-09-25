@@ -30,6 +30,9 @@ disabled = true
 [php]
 disabled = true
 
+[python]
+disabled = true
+
 format = """
 $directory\
 $git_branch\
