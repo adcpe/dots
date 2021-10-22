@@ -3,13 +3,13 @@ alias ssh="kitty +kitten ssh"
 
 # dotfiles git repo
 alias dots='git --git-dir=$HOME/.dots-git/ --work-tree=$HOME'
-alias daa='dots add'
+alias dadd='dots add'
 alias ddif='dots diff'
 alias dst='dots status'
 alias dpom='dots push origin main'
 alias dcom='dots commit'
 
-alias c='code'
+alias c='vscodium'
 alias cat='bat --theme base16'
 
 alias ls='exa --group-directories-first'
