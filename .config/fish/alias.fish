@@ -30,3 +30,5 @@ alias pacinfo='pacman -Si'
 
 # trash-cli https://github.com/sindresorhus/trash-cli
 alias rm='trash'
+
+alias refresh-mirrors='sudo reflector --country "Canada,United States,Brazil," --latest 25 --protocol http,https --sort rate --save /etc/pacman.d/mirrorlist && pacup'
