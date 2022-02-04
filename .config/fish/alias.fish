@@ -10,6 +10,7 @@ alias dpom='dots push origin main'
 alias dcom='dots commit'
 
 alias c='vscodium'
+alias code='vscodium'
 alias cat='bat --theme base16'
 
 alias ls='exa --group-directories-first'
