@@ -9,8 +9,7 @@ alias dst='dots status'
 alias dpom='dots push origin main'
 alias dcom='dots commit'
 
-alias c='vscodium'
-alias code='vscodium'
+alias c='code'
 alias cat='bat --theme base16'
 
 alias ls='exa --group-directories-first'
@@ -28,6 +27,8 @@ alias pacsl='pacman -Qs'
 alias paccc='pacman -Sc'
 alias paclo='pacman -Qdt'
 alias pacinfo='pacman -Si'
+
+alias plasma_restart='kquitapp5 plasmashell && kstart5 plasmashell'
 
 # trash-cli https://github.com/sindresorhus/trash-cli
 alias rm='trash'
