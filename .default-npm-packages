@@ -1,4 +1,6 @@
 trash-cli
 eslint
 standard
+eslint-config-standard
 prettier
+live-server

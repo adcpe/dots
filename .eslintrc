@@ -1,6 +1,5 @@
 {
-  "extends": ["standard", "standard-jsx"],
-  "plugins": ["prettier"],
+  "extends": ["standard", "prettier"],
   "rules": {
     "prettier/prettier": "error",
     "no-unused-vars": "off"
