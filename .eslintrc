@@ -1,7 +1,0 @@
-{
-  "extends": ["standard", "prettier"],
-  "rules": {
-    "prettier/prettier": "error",
-    "no-unused-vars": "off"
-  }
-}
