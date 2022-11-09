@@ -9,8 +9,8 @@ alias dst='dots status'
 alias dpom='dots push origin main'
 alias dcom='dots commit'
 
-alias c='code'
-alias cat='bat --theme base16'
+alias c='codium'
+alias cat='bat --theme gruvbox-dark'
 
 alias ls='exa --group-directories-first'
 alias la='ls -a'
