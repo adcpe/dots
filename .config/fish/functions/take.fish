@@ -1,3 +1,3 @@
 function take
-    mkdir $argv && cd $argv
+    mkdir $argv && cd $argv/
 end
