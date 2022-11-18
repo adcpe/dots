@@ -4,3 +4,4 @@ standard
 eslint-config-standard
 prettier
 live-server
+pnpm
