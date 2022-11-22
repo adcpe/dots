@@ -1,17 +1,28 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
 add_newline = false
 
 [line_break]
 disabled = true
 
 [character]
-format = "[❯ ](bold blue)"
-success_symbol = "[❯](bold green)"
-error_symbol = "[❯](bold red)"
+# format = "[❯ ](bold blue)"
+format = "[ ](bold blue)"
+success_symbol = "[](bold green)"
+error_symbol = "[](bold red)"
+
+[shell]
+format = "[$indicator]($style) "
+fish_indicator = ""
+bash_indicator = ""
+style = "cyan bold"
+disabled = false
 
 [package]
 disabled = false
 
 [directory]
+home_symbol = "~"
 truncation_length = 0
 truncate_to_repo = false
 style = "bold cyan"
@@ -34,6 +45,7 @@ disabled = true
 disabled = true
 
 format = """
+$shell\
 $directory\
 $git_branch\
 $git_commit\
