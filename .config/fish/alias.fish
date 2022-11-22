@@ -1,4 +1,8 @@
-alias cra='npx create-react-app'
+# pnpm
+alias pn='pnpm'
+alias pnx='pnpm dlx'
+
+alias cra='pnpm dlx create-react-app'
 alias ssh="kitty +kitten ssh"
 
 # dotfiles git repo
@@ -9,8 +13,6 @@ alias dst='dots status'
 alias dpom='dots push origin main'
 alias dcom='dots commit'
 
-alias c='codium'
-alias code='codium'
 alias cat='bat --theme gruvbox-dark'
 
 alias ls='exa --group-directories-first'
