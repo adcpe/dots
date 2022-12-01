@@ -1,6 +1,30 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR __fish_initialized:3400
+SETUVAR _fish_abbr_cat:bat
+SETUVAR _fish_abbr_dadd:dots\x20add
+SETUVAR _fish_abbr_dcom:dots\x20commit
+SETUVAR _fish_abbr_ddif:dots\x20diff
+SETUVAR _fish_abbr_dpom:dots\x20push\x20origin\x20main
+SETUVAR _fish_abbr_dst:dots\x20status
+SETUVAR _fish_abbr_ls:exa\x20\x2d\x2dgroup\x2ddirectories\x2dfirst
+SETUVAR _fish_abbr_paccc:yay\x20\x2dSc
+SETUVAR _fish_abbr_paci:yay\x20\x2dS
+SETUVAR _fish_abbr_pacinfo:yay\x20\x2dSi
+SETUVAR _fish_abbr_paclo:yay\x20\x2dQdt
+SETUVAR _fish_abbr_pacro:yay\x20\x2dRns\x20\x28yay\x20\x2dQdtq\x29
+SETUVAR _fish_abbr_pacs:yay\x20\x2dSs
+SETUVAR _fish_abbr_pacsl:yay\x20\x2dQs
+SETUVAR _fish_abbr_pacu:yay\x20\x2dSyu
+SETUVAR _fish_abbr_pacun:yay\x20\x2dRns
+SETUVAR _fish_abbr_pacup:yay\x20\x2dSyyu
+SETUVAR _fish_abbr_pni:pnpm\x20i
+SETUVAR _fish_abbr_pnid:pnpm\x20i\x20\x2dD
+SETUVAR _fish_abbr_pnig:pnpm\x20i\x20\x2dg
+SETUVAR _fish_abbr_pnx:pnpm\x20dlx
+SETUVAR _fish_abbr_rm:trash
+SETUVAR _fish_abbr_ssh:kitty\x20\x2bkitten\x20ssh
+SETUVAR fish_abbreviations:\x1d
 SETUVAR fish_color_autosuggestion:969896
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:c397d8
