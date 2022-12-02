@@ -3,7 +3,7 @@
 ## Requirements
 
 - Git
-- Curl
+- cURL
 
 ## Restore script
 
