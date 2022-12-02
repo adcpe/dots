@@ -9,8 +9,8 @@
 
 Install config tracking in your \$HOME by running:
 
-```
-curl -Lk https://gitlab.com/andres-dc/dots/-/raw/main/.restore | /bin/bash
+```console
+curl https://gitlab.com/adcpe/dots/-/raw/main/.config/restore-dots.fish -o $HOME/.config/restore-dots.fish && $HOME/.config/restore-dots.fish
 ```
 
 ## Git commands
