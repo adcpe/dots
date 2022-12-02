@@ -4,12 +4,13 @@ read -l -P 'Do you want to continue? [y/N] ' confirm
 
 switch $confirm
     case Y y
+        set -l dir $HOME/.dots-git/ # set dots git directory
+
         function conf
             /usr/bin/git --git-dir=$dir --work-tree=$HOME $argv
         end
 
         echo -e 'Cloning https://gitlab.com/adcpe/dots.git into .dots-git'
-        set -l dir $HOME/.dots-git/ # set dots git directory
 
         rm -R -f $dir
         git clone --bare https://gitlab.com/adcpe/dots.git $dir
