@@ -9,6 +9,7 @@ $git_commit\
 $git_state\
 $git_metrics\
 $git_status\
+$fill\
 $time\
 $shell\
 $character
@@ -16,71 +17,74 @@ $character
 
 add_newline = true
 
+[fill]
+symbol = " "
+
 [line_break]
 disabled = true
 
 [username]
-style_user = "bold #FB69C0"
-format = '[\[$user]($style)'
+style_user = "bold red"
+format = '[$user]($style)'
 disabled = false
 show_always = true
 
 [hostname]
 ssh_only = false
-style = "bold #FB69C0"
-format = '[@$hostname\]]($style)'
+style = "bold red"
+format = '[@$hostname]($style)'
 disabled = false
 
 [directory]
 home_symbol = "~"
 truncation_length = 0
 truncate_to_repo = false
-style = "bold #F7CA88"
+style = "bold yellow"
 use_logical_path = true
 fish_style_pwd_dir_length = 1
-format = '[\[$path\]]($style)'
+format = ' [$path]($style)'
 
 [git_branch]
 disabled = false
-format = '[\[$symbol$branch(:$remote_branch)]($style) '
+format = ' [$symbol$branch(:$remote_branch)]($style) '
 only_attached = false
-style = "bold #76BDDB dimmed"
+style = "bold blue dimmed"
 
 [git_commit]
 disabled = false
-format = '[$hash$tag]($style) '
+format = ' [$hash$tag]($style) '
 only_detached = true
-style = "bold #76BDDB dimmed"
+style = "bold blue dimmed"
 
 [git_state]
 disabled = false
-format = '[$state( $progress_current/$progress_total)]($style)) '
-style = "bold #76BDDB dimmed"
+format = ' [$state( $progress_current/$progress_total)]($style)) '
+style = "bold blue dimmed"
 
 [git_metrics]
-added_style = "bold #76BDDB dimmed"
-deleted_style = "bold #76BDDB dimmed"
+added_style = "bold blue dimmed"
+deleted_style = "bold blue dimmed"
 disabled = false
-format = "([+$added]($added_style) )([-$deleted]($deleted_style) )"
+format = " ([+$added]($added_style) )([-$deleted]($deleted_style) )"
 
 [git_status]
 disabled = false
-format = '([$all_status$ahead_behind\]]($style))'
+format = ' ([$all_status$ahead_behind]($style))'
 ignore_submodules = false
-style = "bold #76BDDB dimmed"
+style = "bold blue dimmed"
 
 [time]
 disabled = false
-format = '[\[$time\]]($style)'
-style = "bold #FF8800"
+format = ' [$time]($style)'
+style = "bold purple"
 use_12hr = false
 utc_time_offset = "local"
 
 [shell]
-format = '[\[$indicator\]]($style)'
+format = ' [$indicator]($style)'
 fish_indicator = ""
 bash_indicator = ""
-style = "bold #EB577B"
+style = "bold cyan"
 disabled = false
 
 [character]
