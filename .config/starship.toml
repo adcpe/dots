@@ -46,32 +46,32 @@ format = ' [$path]($style)'
 
 [git_branch]
 disabled = false
-format = ' [$symbol$branch(:$remote_branch)]($style) '
+format = ' [$symbol$branch(:$remote_branch)]($style)'
 only_attached = false
-style = "bold blue dimmed"
+style = "bold blue"
 
 [git_commit]
 disabled = false
-format = ' [$hash$tag]($style) '
+format = ' [$hash$tag]($style)'
 only_detached = true
-style = "bold blue dimmed"
+style = "bold blue"
 
 [git_state]
 disabled = false
-format = ' [$state( $progress_current/$progress_total)]($style)) '
-style = "bold blue dimmed"
+format = ' [$state( $progress_current/$progress_total)]($style)'
+style = "bold blue"
 
 [git_metrics]
-added_style = "bold blue dimmed"
-deleted_style = "bold blue dimmed"
+added_style = "bold blue"
+deleted_style = "bold blue"
 disabled = false
-format = " ([+$added]($added_style) )([-$deleted]($deleted_style) )"
+format = " ([+$added]($added_style)) ([-$deleted]($deleted_style))"
 
 [git_status]
 disabled = false
 format = ' ([$all_status$ahead_behind]($style))'
 ignore_submodules = false
-style = "bold blue dimmed"
+style = "bold blue"
 
 [time]
 disabled = false
@@ -89,12 +89,12 @@ disabled = false
 
 [character]
 format = "$symbol "
-success_symbol = "[\n❯](bold green dimmed)"
-error_symbol = "[\n❯](bold red dimmed)"
-vimcmd_replace_one_symbol = "[\n❮](bold purple dimmed)"
-vimcmd_replace_symbol = "[\n❮](bold purple dimmed)"
-vimcmd_symbol = "[\n❮](bold green dimmed)"
-vimcmd_visual_symbol = "[\n❮](bold yellow dimmed)"
+success_symbol = "[\n❯](bold green)"
+error_symbol = "[\n❯](bold red)"
+vimcmd_replace_one_symbol = "[\n❮](bold purple)"
+vimcmd_replace_symbol = "[\n❮](bold purple)"
+vimcmd_symbol = "[\n❮](bold green)"
+vimcmd_visual_symbol = "[\n❮](bold yellow)"
 
 [package]
 disabled = false
