@@ -1,22 +1,25 @@
-# Dotfiles
+# adcpe's dotfiles
 
 ## Requirements
 
 - Git
 - cURL
+- Fish
 
-## Restore script
+## Redot
 
-Install config tracking in your \$HOME by running:
+These commands will download and run the setup script for the `dotfiles`.
 
 ```console
-curl https://gitlab.com/adcpe/dots/-/raw/main/.config/restore-dots.fish -o $HOME/.config/restore-dots.fish && $HOME/.config/restore-dots.fish
+curl https://gitlab.com/adcpe/dots/-/raw/main/.config/dots/redot.fish -o $HOME/.config/dots/redot.fish
+
+$HOME/.config/dots/redot.fish
 ```
 
-## Git commands
+## Git
 
-`dots` acts as an alias for `git` in the `$HOME` directory.
+`dots` is an alias for `git --git-dir=$HOME/.config/dots/git/ --work-tree=$HOME` in the `$HOME` directory.
 
 ---
 
-_As seen in https://www.atlassian.com/git/tutorials/dotfiles_
+_As seen in [https://www.atlassian.com/git/tutorials/dotfiles]()_
