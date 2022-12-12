@@ -1,0 +1,8 @@
+#!/usr/bin/env fish
+
+codex backup
+dots add ~/.config/VSCodium/User/extensions
+
+dots add ~/.config/VSCodium/User/snippets/.
+dots add ~/.config/VSCodium/User/keybindings.json
+dots add ~/.config/VSCodium/User/settings.json
