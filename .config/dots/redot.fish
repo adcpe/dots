@@ -14,6 +14,7 @@ switch $confirm
         /usr/bin/git --git-dir=$dir --work-tree=$HOME checkout -f # checkout overwriting existing files
         /usr/bin/git --git-dir=$dir --work-tree=$HOME config status.showUntrackedFiles no # ignore untracked files
         /usr/bin/git --git-dir=$dir --work-tree=$HOME config --local core.hooksPath $HOME/.config/dots/hooks/ # set hooks dir
+        /usr/bin/git --git-dir=$dir --work-tree=$HOME config --local core.hooksPath $HOME/.config/dots/ignore # set ignore file location
         /usr/bin/git --git-dir=$dir --work-tree=$HOME remote set-url origin git@gitlab.com:adcpe/dots.git # use ssh for remote
         echo -e 'Operation finished!'
     case '*'

@@ -22,7 +22,7 @@ abbr -a -g pni 'pnpm i'
 abbr -a -g pnun 'pnpm un'
 abbr -a -g pnid 'pnpm i -D'
 abbr -a -g pnig 'pnpm i -g'
-abbr -a -g pnx 'pnpm dlx'
+abbr -a -g pnx 'pnpm -s dlx'
 
 # npm
 abbr -a -g npi 'npm i'
