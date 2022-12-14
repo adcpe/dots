@@ -1,54 +1,42 @@
 {
   "window.title": "${dirty}${activeFolderMedium}/${activeEditorShort}${separator}${rootName}${separator}${appName}",
 
-  // telemetry
-  "code-runner.enableAppInsights": false,
-  "gitlens.telemetry.enabled": false,
-  "telemetry.telemetryLevel": "off",
+  "workbench.colorTheme": "Ayu Mirage Bordered",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.enableExperiments": false,
+  "workbench.tree.renderIndentGuides": "none",
 
-  "files.autoSave": "afterDelay",
-  "editor.fontSize": 18,
+  // fonts, etc
+  "editor.fontFamily": "Hack, Inconsolata, Iosevka, VictorMono Nerd Font, Fira Code",
   "editor.fontWeight": "400",
-  "editor.fontFamily": "Iosevka, Fira Code, Hack, VictorMono Nerd Font, Inconsolata",
-  // "editor.fontFamily": "Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-  "editor.fontLigatures": true,
-  "editor.mouseWheelZoom": false,
-  "editor.guides.indentation": false,
-  "editor.guides.highlightActiveIndentation": false,
-  "editor.rulers": [
-    {
-      "column": 80,
-      "color": "#FFFF0025"
-    },
-    {
-      "column": 100,
-      "color": "#FF000025"
-    }
-  ],
+  "editor.fontSize": 18,
+  "editor.fontLigatures": false,
   "editor.lineHeight": 30,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "line",
+  "editor.mouseWheelZoom": false,
+  "editor.guides.indentation": false,
+  "editor.guides.highlightActiveIndentation": false,
+  "editor.rulers": [
+    { "column": 80, "color": "#FFFF0040" },
+    { "column": 100, "color": "#FF000040" }
+  ],
   "editor.minimap.maxColumn": 100,
   "editor.minimap.showSlider": "always",
   "editor.formatOnSave": true,
+
+  "files.autoSave": "afterDelay",
   "extensions.autoUpdate": true,
   "diffEditor.renderSideBySide": true,
   "explorer.compactFolders": false,
-  "workbench.iconTheme": "material-icon-theme",
 
   // markdown preview
-  "markdown.preview.fontFamily": "'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
+  "markdown.preview.fontFamily": "Noto Sans, Ubuntu, Droid Sans, sans-serif",
   "markdown.preview.fontSize": 18,
-
-  // settings sync
-  "sync.gist": "19e887c46d0d96393f1c560e97e3b8b3",
-  "sync.autoUpload": true,
-  "sync.forceDownload": false,
-  "sync.forceUpload": true,
-  "sync.quietSync": true,
 
   "code-runner.clearPreviousOutput": true,
   "explorer.confirmDelete": false,
@@ -57,7 +45,6 @@
   "editor.cursorWidth": 2,
   "files.insertFinalNewline": true,
   "explorer.confirmDragAndDrop": false,
-  "workbench.enableExperiments": false,
 
   // ruby
   "ruby.useBundler": true,
@@ -86,12 +73,14 @@
   "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[nunjucks]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[properties]": { "editor.defaultFormatter": "yy0931.gitconfig-lsp" },
   "[pug]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[ruby]": { "editor.defaultFormatter": "castwide.solargraph" },
   "[sass]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[scss]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[vue]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
   "emmet.includeLanguages": {
     "django-html": "html",
     "erb": "html",
@@ -121,8 +110,6 @@
 
   "editor.minimap.renderCharacters": false,
   "php.validate.executablePath": "/home/adc/.asdf/shims/php",
-  "sync.autoDownload": true,
-  "redhat.telemetry.enabled": false,
   "xml.server.vmargs": "-Xmx256M",
   "xml.symbols.maxItemsComputed": 10000,
   "prettier.configPath": "/home/adc/.prettierrc.js",
@@ -134,7 +121,6 @@
     "html": true
   },
   "volar.icon.preview": false,
-  "workbench.tree.renderIndentGuides": "none",
   "base16.generator.activatedThemes": [
     "base16-dracula-dark",
     "base16-gruvbox-dark-hard",
@@ -154,7 +140,6 @@
     "rgba(255,127,255,0.20)",
     "rgba(79,236,236,0.20)"
   ],
-  "workbench.colorTheme": "Ayu Mirage Bordered",
   "cSpell.userWords": [
     "adcpe",
     "castwide",
@@ -174,21 +159,19 @@
     "wordcount"
   ],
 
-  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
-  "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
-  },
   "files.trimTrailingWhitespace": true,
   "editor.formatOnType": true,
   "editor.formatOnPaste": true,
   "material-icon-theme.folders.associations": {
     "py": "python"
   },
-  "workbench.productIconTheme": "material-product-icons",
   "material-icon-theme.folders.theme": "specific",
   "material-icon-theme.folders.color": "#26a69a",
-  "[properties]": {
-    "editor.defaultFormatter": "yy0931.gitconfig-lsp"
-  },
-  "security.workspace.trust.untrustedFiles": "open"
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // telemetry
+  "code-runner.enableAppInsights": false,
+  "gitlens.telemetry.enabled": false,
+  "redhat.telemetry.enabled": false,
+  "telemetry.telemetryLevel": "off"
 }

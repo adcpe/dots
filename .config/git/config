@@ -1,8 +1,28 @@
 [user]
     name = Andrés Del Carpio
     email = adc@adc.pe
+[alias]
+    a = add
+    ch = checkout
+    conf = config --global -l
+    co = commit
+    cm = commit -m
+    br = branch
+    d = diff
+    ft = fetch
+    last = log -1 HEAD --stat
+    ll = log --oneline
+    pl = pull
+    ps = push
+    rem = remote
+    rs = restore
+    rss = restore --staged
+    rv = remote -v
+    st = status -sb
 [core]
     editor = nano
+[help]
+    autocorrect = 20
 [color]
     ui = true
 [color "branch"]

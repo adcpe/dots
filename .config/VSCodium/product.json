@@ -1,6 +1,7 @@
 {
   "nameShort": "VSCodium",
   "nameLong": "VSCodium",
+  "dataFolderName": ".config/VSCodium/data",
   "extensionsGallery": {
     "serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
     "itemUrl": "https://marketplace.visualstudio.com/items",
