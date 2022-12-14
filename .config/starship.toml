@@ -24,14 +24,14 @@ symbol = " "
 disabled = true
 
 [username]
-style_user = "bold red"
+style_user = "bold green"
 format = '[$user]($style)'
 disabled = false
 show_always = true
 
 [hostname]
 ssh_only = false
-style = "bold red"
+style = "bold green"
 format = '[@$hostname]($style)'
 disabled = false
 
@@ -76,7 +76,7 @@ style = "bold blue"
 [time]
 disabled = false
 format = ' [$time]($style)'
-style = "bold purple"
+style = "bold white"
 use_12hr = false
 utc_time_offset = "local"
 
