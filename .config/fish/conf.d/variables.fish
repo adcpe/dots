@@ -1,3 +1,5 @@
+set -gx fish_greeting
+
 set -gx VISUAL kate
 set -gx EDITOR nano
 set -gx XDG_CONFIG_HOME $HOME/.config
@@ -13,3 +15,7 @@ set -gx GIT_EDITOR nano
 
 set -gx PNPM_HOME $HOME/.local/share/pnpm
 set -gx PATH $PNPM_HOME $PATH
+
+set -gx GTK_USE_PORTAL 1
+
+set -gx codex_path $HOME/.config/VSCodium/User/extensions

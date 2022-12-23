@@ -1,3 +1,6 @@
+abbr v vim
+abbr nv nvim
+
 # pacman/yay
 abbr paci 'yay -S'
 abbr pacun 'yay -Rcs'
@@ -67,7 +70,7 @@ abbr protdc 'protonvpn-cli disconnect'
 abbr protst 'protonvpn-cli status'
 
 # asdf
-abbr afpad 'asdf plugin add'
+abbr afpa 'asdf plugin add'
 abbr afprm 'asdf plugin remove'
 abbr afpls 'asdf plugin list'
 abbr afpup 'asdf plugin update --all'
