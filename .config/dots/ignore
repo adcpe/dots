@@ -1,2 +1,3 @@
-.dots-git
+.config/dots/git/
 aur.fish
+fish_variables
