@@ -1,6 +1,12 @@
 {
   "window.title": "${dirty}${activeFolderMedium}/${activeEditorShort}${separator}${rootName}${separator}${appName}",
 
+  // telemetry
+  "code-runner.enableAppInsights": false,
+  "gitlens.telemetry.enabled": false,
+  "redhat.telemetry.enabled": false,
+  "telemetry.telemetryLevel": "off",
+
   "workbench.colorTheme": "Ayu Mirage Bordered",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "material-product-icons",
@@ -167,11 +173,5 @@
   },
   "material-icon-theme.folders.theme": "specific",
   "material-icon-theme.folders.color": "#26a69a",
-  "security.workspace.trust.untrustedFiles": "open",
-
-  // telemetry
-  "code-runner.enableAppInsights": false,
-  "gitlens.telemetry.enabled": false,
-  "redhat.telemetry.enabled": false,
-  "telemetry.telemetryLevel": "off"
+  "security.workspace.trust.untrustedFiles": "open"
 }
