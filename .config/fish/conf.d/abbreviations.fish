@@ -87,6 +87,7 @@ abbr lsg 'exa --group-directories-first --icons --git'
 abbr lst 'exa --group-directories-first --icons --tree'
 
 # various
+abbr c code
 abbr cat bat
 abbr man batman
 abbr rm trash

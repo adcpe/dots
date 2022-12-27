@@ -1,16 +1,16 @@
-function codex -a cmd -d 'Backups and installs VSCodium extensions'
+function codex -a cmd -d 'Backups and installs VSCode extensions'
     switch $cmd[1]
         case install
             echo 'Starting installation of extensions'
             echo ''
             while read -a line
-                eval codium --install-extension $line
+                eval code --install-extension $line
                 echo ''
             end <$codex_path
             set -l num (count < $codex_path)
             echo "Finished installing $num extensions."
         case backup
-            eval codium --list-extensions >$codex_path
+            eval code --list-extensions >$codex_path
             set -l num (count < $codex_path)
             echo "Saved $num extensions."
         case '' help
