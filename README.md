@@ -11,9 +11,7 @@
 These commands will download and run the setup script for the `dotfiles`.
 
 ```console
-curl https://gitlab.com/adcpe/dots/-/raw/main/.config/dots/redot.fish -o $HOME/.config/dots/redot.fish
-
-$HOME/.config/dots/redot.fish
+curl -Lks https://sh.adc.li/dots.sh | sh
 ```
 
 ## Git
