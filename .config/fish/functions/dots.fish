@@ -1,4 +1,4 @@
-function dots -w git -d='Shortcut for git operations on my dotfiles repository'
+function dots -w git -d 'Shortcut for git operations on my dotfiles repository'
     if test (command pwd) = ~
         git --git-dir=$HOME/.config/dots/git --work-tree=$HOME $argv
     else

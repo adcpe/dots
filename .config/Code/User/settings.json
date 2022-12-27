@@ -173,5 +173,6 @@
   },
   "material-icon-theme.folders.theme": "specific",
   "material-icon-theme.folders.color": "#26a69a",
-  "security.workspace.trust.untrustedFiles": "open"
+  "security.workspace.trust.untrustedFiles": "open",
+  "github.gitProtocol": "ssh"
 }
