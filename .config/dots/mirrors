@@ -1,8 +1,0 @@
-#!/usr/bin/env sh
-
-mirrors() {
-  pacman -Syu --noconfirm reflector
-  reflector --verbose --country "Canada,United States,Brazil," --latest 25 --protocol http,https --sort rate --save /etc/pacman.d/mirrorlist
-}
-
-mirrors
