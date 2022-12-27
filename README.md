@@ -22,4 +22,4 @@ $HOME/.config/dots/redot.fish
 
 ---
 
-_As seen in [https://www.atlassian.com/git/tutorials/dotfiles]()_
+As seen in https://www.atlassian.com/git/tutorials/dotfiles
