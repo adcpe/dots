@@ -1,6 +1,3 @@
-abbr v vim
-abbr nv nvim
-
 # pacman/yay
 abbr paci 'yay -S'
 abbr pacun 'yay -Rcs'
@@ -90,4 +87,6 @@ abbr lst 'exa --group-directories-first --icons --tree'
 abbr c code
 abbr cat bat
 abbr man batman
+abbr nv nvim
 abbr rm trash
+abbr v vim
