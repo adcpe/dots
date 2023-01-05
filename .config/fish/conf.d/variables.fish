@@ -21,4 +21,4 @@ set -gx PATH $PNPM_HOME $PATH
 
 set -gx GTK_USE_PORTAL 1
 
-set -gx codex_path $HOME/.config/Code/User/extensions
+set -gx CODEX_FILE $HOME/.config/Code/User/codex
