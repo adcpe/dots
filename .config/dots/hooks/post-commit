@@ -1,0 +1,8 @@
+#!/usr/bin/env fish
+
+echo ""
+dots log --name-status HEAD^..HEAD
+echo ""
+echo ""
+dots status
+echo ""
