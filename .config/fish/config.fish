@@ -1,3 +1,3 @@
 fish_vi_key_bindings
-source ~/.asdf/asdf.fish
+source /opt/asdf-vm/asdf.fish
 starship init fish | source
