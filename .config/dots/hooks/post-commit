@@ -2,7 +2,13 @@
 
 echo ""
 dots log --name-status HEAD^..HEAD
-echo ""
-echo ""
+
+set_color -d red
+echo "-----------------------------------------------------------------------"
+set_color normal
+
 dots status
-echo ""
+
+set_color -d red
+echo "-----------------------------------------------------------------------"
+set_color normal
