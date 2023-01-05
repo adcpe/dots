@@ -1,18 +1,16 @@
-function refresh_mirrors -d 'Update pacman mirrorlist'
+function refresh_mirrors -d "Update pacman mirrorlist"
     if not command --search --quiet reflector
-        echo ''
-        echo 'Installing reflector.'
-        echo ''
+        echo ""
+        echo "Installing reflector."
+        echo ""
         sudo pacman -S reflector
     end
 
-    echo ''
-    echo 'Searching fastest mirrors. Please wait...'
-    echo ''
-    sudo reflector --verbose --country "Canada,United States,Brazil," --latest 10 --protocol http,https --sort rate --save /etc/pacman.d/mirrorlist
-    echo ''
-    echo 'Operation complete!'
-    echo 'Installing updates.'
-    echo ''
-    sudo pacman -Syyu
+    echo ""
+    sudo reflector --verbose --country br,ar,us,ca --fastest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+    echo ""
+    echo "Operation complete!"
+    echo ""
+    sudo cat /etc/pacman.d/mirrorlist
+    echo ""
 end
