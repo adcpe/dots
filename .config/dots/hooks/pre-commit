@@ -5,3 +5,5 @@ dots add .config/Code/User/codex
 dots add .config/Code/User/snippets/.
 dots add .config/Code/User/keybindings.json
 dots add .config/Code/User/settings.json
+
+dots add .local/share/fish/fish_history
