@@ -87,7 +87,8 @@ abbr lst 'exa --group-directories-first --icons --tree'
 
 # various
 abbr c code
-abbr cat bat
+abbr bat batcat
+abbr cat batcat
 abbr man batman
 abbr nv nvim
 abbr rm trash
