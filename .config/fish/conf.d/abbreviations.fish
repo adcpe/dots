@@ -11,7 +11,8 @@ abbr pacsi 'yay -Si'
 
 # git
 abbr g git
-abbr gs 'git s'
+abbr gs 'git status -sb'
+abbr gst 'git status'
 abbr ga 'git add'
 abbr gaa 'git add --all'
 abbr gap 'git add --patch'
@@ -33,9 +34,10 @@ abbr gd 'git diff'
 abbr gl 'git ll'
 
 # dotfiles repo at $HOME
-abbr dadd 'dots add'
-abbr ddif 'dots diff'
-abbr dst 'dots status -sb'
+abbr da 'dots add'
+abbr dd 'dots diff'
+abbr ds 'dots status -sb'
+abbr dst 'dots status'
 abbr dpom 'dots push origin main'
 abbr dcom 'dots commit'
 
