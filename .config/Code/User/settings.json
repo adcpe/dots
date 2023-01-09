@@ -34,6 +34,8 @@
   "editor.minimap.maxColumn": 100,
   "editor.minimap.showSlider": "always",
   "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
 
   "files.autoSave": "afterDelay",
   "extensions.autoUpdate": true,
@@ -114,6 +116,30 @@
   "gitlens.codeLens.enabled": false,
   "diffEditor.ignoreTrimWhitespace": false,
 
+  // cSpell
+  "cSpell.enableFiletypes": ["md", "!*"],
+  "cSpell.userWords": [
+    "adcpe",
+    "Alacritty",
+    "castwide",
+    "Codesandbox",
+    "dotfiles",
+    "gitmodules",
+    "Laravel",
+    "Nord",
+    "Nuxt",
+    "pomodoro",
+    "postlist",
+    "readdir",
+    "rebornix",
+    "Rubocop",
+    "Solargraph",
+    "templating",
+    "Unported",
+    "unstage",
+    "wordcount"
+  ],
+
   "editor.minimap.renderCharacters": false,
   "php.validate.executablePath": "/home/adc/.asdf/shims/php",
   "xml.server.vmargs": "-Xmx256M",
@@ -146,31 +172,8 @@
     "rgba(255,127,255,0.20)",
     "rgba(79,236,236,0.20)"
   ],
-  "cSpell.userWords": [
-    "adcpe",
-    "Alacritty",
-    "castwide",
-    "Codesandbox",
-    "dotfiles",
-    "gitmodules",
-    "Laravel",
-    "Nord",
-    "Nuxt",
-    "pomodoro",
-    "postlist",
-    "readdir",
-    "rebornix",
-    "Rubocop",
-    "Solargraph",
-    "templating",
-    "Unported",
-    "unstage",
-    "wordcount"
-  ],
 
   "files.trimTrailingWhitespace": true,
-  "editor.formatOnType": true,
-  "editor.formatOnPaste": true,
   "material-icon-theme.folders.associations": {
     "py": "python"
   },
