@@ -35,7 +35,7 @@ abbr gl 'git ll'
 
 # dotfiles repo at $HOME
 abbr da 'dots add'
-abbr dd 'dots diff'
+abbr ddf 'dots diff'
 abbr ds 'dots status -sb'
 abbr dst 'dots status'
 abbr dpom 'dots push origin main'
@@ -46,6 +46,7 @@ abbr kdif 'kitty +kitten diff'
 abbr kicat 'kitty +kitten icat'
 abbr kfonts 'kitty +list-fonts'
 abbr kssh 'kitty +kitten ssh'
+abbr kthemes 'kitty +kitten themes'
 
 # pnpm
 abbr pn pnpm
