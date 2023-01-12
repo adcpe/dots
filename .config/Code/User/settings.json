@@ -14,7 +14,7 @@
   "workbench.tree.renderIndentGuides": "none",
 
   // fonts, etc
-  "editor.fontFamily": "Hack, Inconsolata, Iosevka, VictorMono Nerd Font, Fira Code",
+  "editor.fontFamily": "Noto Sans Mono, Inconsolata, Fira Code, Victor Mono, Hack, Iosevka",
   "editor.fontWeight": "400",
   "editor.fontSize": 18,
   "editor.fontLigatures": false,

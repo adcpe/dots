@@ -3,7 +3,7 @@ function pk -d 'Search packages inside a browser.'
         case main
             open "https://archlinux.org/packages/?sort=&q=$argv[2]"
         case aur
-            open "https://aur.archlinux.org/packages?O=0&K=$argv[2]"
+            open "https://aur.archlinux.org/packages?O=0&SeB=nd&K=$argv[2]&outdated=&SB=n&SO=a&PP=50"
         case help ''
             echo "Usage: pk main <package>          Search the main packages"
             echo "       pk aur <package>           Search the AUR"
