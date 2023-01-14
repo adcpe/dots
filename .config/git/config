@@ -20,7 +20,7 @@
     rv = remote -v
     st = status -sb
 [core]
-    editor = nano
+    editor = nvim
 [help]
     autocorrect = 20
 [color]
@@ -50,3 +50,8 @@
 [credential "https://gist.github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
