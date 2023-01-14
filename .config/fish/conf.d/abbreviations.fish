@@ -7,7 +7,8 @@ abbr pacro 'yay -Rcs (yay -Qdtq)'
 abbr pacs 'yay -Ss'
 abbr pacsl 'yay -Qs'
 abbr paccc 'yay -Sc'
-abbr pacsi 'yay -Si'
+abbr pacinfo 'yay -Si'
+abbr paccount 'yay -Q | wc -l'
 
 # git
 abbr g git
@@ -62,12 +63,12 @@ abbr npun 'npm un'
 abbr npid 'npm i -D'
 abbr npig 'npm i -g'
 
-# protonvpn
-abbr protin 'protonvpn-cli login'
-abbr protc 'protonvpn-cli connect'
-abbr protcf 'protonvpn-cli connect -f'
-abbr protdc 'protonvpn-cli disconnect'
-abbr protst 'protonvpn-cli status'
+# vpn
+abbr vpnin 'protonvpn-cli login'
+abbr vpnc 'protonvpn-cli connect'
+abbr vpncf 'protonvpn-cli connect -f'
+abbr vpndc 'protonvpn-cli disconnect'
+abbr vpnst 'protonvpn-cli status'
 
 # asdf
 abbr afpa 'asdf plugin add'
@@ -82,6 +83,7 @@ abbr afcurr 'asdf current'
 
 # exa/ls
 abbr ls 'exa --group-directories-first --icons'
+abbr ll 'exa --group-directories-first --icons --long --header --git'
 abbr lsa 'exa --group-directories-first --icons --all'
 abbr lsg 'exa --group-directories-first --icons --git'
 abbr lst 'exa --group-directories-first --icons --tree'
