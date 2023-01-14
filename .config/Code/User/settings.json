@@ -13,6 +13,8 @@
   "workbench.enableExperiments": false,
   "workbench.tree.renderIndentGuides": "none",
 
+  "terminal.integrated.defaultProfile.linux": "fish",
+
   // fonts, etc
   "editor.fontFamily": "Noto Sans Mono, Inconsolata, Fira Code, Victor Mono, Hack, Iosevka",
   "editor.fontWeight": "400",
