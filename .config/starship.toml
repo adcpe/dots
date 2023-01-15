@@ -85,6 +85,16 @@ utc_time_offset = "local"
 disabled = false
 format = ' [$indicator]($style)'
 style = "bold cyan"
+bash_indicator='bash'
+fish_indicator='fish'
+zsh_indicator='zsh'
+powershell_indicator='powershell'
+ion_indicator='ion'
+elvish_indicator='elvish'
+tcsh_indicator='tcsh'
+xonsh_indicator='xonsh'
+cmd_indicator='cmd'
+nu_indicator='nu'
 
 [character]
 format = "$symbol "

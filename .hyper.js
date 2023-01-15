@@ -8,10 +8,9 @@ module.exports = {
     // or `'canary'` for less polished but more frequent updates
     updateChannel: 'stable',
     // default font size in pixels for all tabs
-    fontSize: 14,
+    fontSize: 16,
     // font family with optional fallbacks
-    fontFamily:
-      'DM Mono, Hack, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", TerminessTTF Nerd Font, monospace',
+    fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
     // font weight for bold characters: 'normal' or 'bold'
@@ -93,7 +92,7 @@ module.exports = {
     //
     // Cygwin
     // - Example: `C:\\cygwin64\\bin\\bash.exe`
-    shell: '',
+    shell: '/bin/fish',
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
     shellArgs: ['--login'],
