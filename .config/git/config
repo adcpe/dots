@@ -1,6 +1,10 @@
 [user]
     name = Andrés Del Carpio
     email = adc@adc.pe
+[core]
+    editor = nvim
+[init]
+    defaultBranch = main
 [alias]
     a = add
     ch = checkout
@@ -19,8 +23,7 @@
     rss = restore --staged
     rv = remote -v
     st = status -sb
-[core]
-    editor = nvim
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [help]
     autocorrect = 20
 [color]
@@ -40,15 +43,11 @@
     untracked = red
 [credential]
     helper = store
-[alias]
-    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-[init]
-    defaultBranch = main
 [credential "https://github.com"]
-	helper = 
+	helper =
 	helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
-	helper = 
+	helper =
 	helper = !/usr/bin/gh auth git-credential
 [filter "lfs"]
 	clean = git-lfs clean -- %f
