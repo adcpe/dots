@@ -1,5 +1,7 @@
 function redot -d 'Function to reset the dotfiles. USE WITH CAUTION'
-    echo -e 'This operation will overwrite the current settings in the $HOME directory.'
+    echo 'You are about to clone the following repository:'
+    echo '      https://github.com/adcpe/dots.git'
+    echo 'This operation will overwrite the current settings in the $HOME directory.'
     read -l -P 'Do you want to continue? [y/N] ' confirmation
 
     switch $confirmation
@@ -7,7 +9,7 @@ function redot -d 'Function to reset the dotfiles. USE WITH CAUTION'
             set -l dir $HOME/.config/dots/git/ # set dots git directory
             rm -R -f $dir
 
-            echo -e 'Cloning https://github.com/adcpe/dots.git into ~/.config/dots/git/'
+            echo -e 'Cloning. Git directory is at ~/.config/dots/git/'
 
             git clone --bare https://github.com/adcpe/dots.git $dir
 

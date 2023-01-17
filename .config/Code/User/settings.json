@@ -1,5 +1,6 @@
 {
   "window.title": "${dirty}${activeFolderMedium}/${activeEditorShort}${separator}${rootName}${separator}${appName}",
+  "window.titleBarStyle": "custom",
 
   // telemetry
   "code-runner.enableAppInsights": false,
@@ -7,7 +8,7 @@
   "redhat.telemetry.enabled": false,
   "telemetry.telemetryLevel": "off",
 
-  "workbench.colorTheme": "Ayu Mirage Bordered",
+  "workbench.colorTheme": "Night Owl (No Italics)",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "material-product-icons",
   "workbench.enableExperiments": false,
@@ -101,13 +102,12 @@
     ".gitgnore": "ignore",
     "*.cjs": "javascript",
     "*.erb": "erb",
-    "*.html": "html",
     "*.md": "markdown",
-    "*.njk": "html",
     "*.mdx": "markdown",
     "*.styl": "stylus",
     "*.sass": "sass",
-    "*.json": "jsonc"
+    "*.json": "jsonc",
+    "*.njk": "nunjucks"
   },
 
   "emmet.triggerExpansionOnTab": true,
@@ -182,5 +182,6 @@
   "material-icon-theme.folders.theme": "specific",
   "material-icon-theme.folders.color": "#26a69a",
   "security.workspace.trust.untrustedFiles": "open",
-  "github.gitProtocol": "ssh"
+  "github.gitProtocol": "ssh",
+  "editor.bracketPairColorization.enabled": false
 }
