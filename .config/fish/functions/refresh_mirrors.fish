@@ -1,4 +1,5 @@
 function refresh_mirrors -d "Update pacman mirrorlist"
+    set fish_trace 1
     if not command --search --quiet reflector
         echo ""
         echo "Installing reflector."
@@ -13,4 +14,5 @@ function refresh_mirrors -d "Update pacman mirrorlist"
     echo ""
     sudo cat /etc/pacman.d/mirrorlist
     echo ""
+    set fish_trace
 end

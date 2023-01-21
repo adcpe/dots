@@ -70,9 +70,9 @@
   },
   "ruby.format": "rubocop",
   "code-runner.executorMap": {
-    "ruby": "$HOME/.asdf/shims/ruby"
+    "ruby": "/home/adc/.config/asdf/shims/solargraph"
   },
-  "solargraph.commandPath": "/home/adc/.asdf/shims/solargraph",
+  "solargraph.commandPath": "/home/adc/.config/asdf/shims/solargraph",
   "solargraph.formatting": true,
 
   // file associations
@@ -143,7 +143,6 @@
   ],
 
   "editor.minimap.renderCharacters": false,
-  "php.validate.executablePath": "/home/adc/.asdf/shims/php",
   "xml.server.vmargs": "-Xmx256M",
   "xml.symbols.maxItemsComputed": 10000,
   "prettier.configPath": "/home/adc/.prettierrc.js",

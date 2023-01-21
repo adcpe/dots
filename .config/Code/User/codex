@@ -16,7 +16,6 @@ dsznajder.es7-react-js-snippets
 eamodio.gitlens
 emmanuelbeziat.vscode-great-icons
 esbenp.prettier-vscode
-eseom.nunjucks-template
 formulahendry.code-runner
 foxundermoon.shell-format
 GitHub.vscode-pull-request-github
@@ -31,7 +30,6 @@ ms-toolsai.jupyter-keymap
 ms-toolsai.jupyter-renderers
 ms-toolsai.vscode-jupyter-cell-tags
 ms-toolsai.vscode-jupyter-slideshow
-ms-vscode.live-server
 oderwat.indent-rainbow
 PKief.material-icon-theme
 PKief.material-product-icons
