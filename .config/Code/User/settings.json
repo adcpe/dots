@@ -8,7 +8,7 @@
   "redhat.telemetry.enabled": false,
   "telemetry.telemetryLevel": "off",
 
-  "workbench.colorTheme": "Night Owl (No Italics)",
+  "workbench.colorTheme": "Ayu Mirage",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "material-product-icons",
   "workbench.enableExperiments": false,

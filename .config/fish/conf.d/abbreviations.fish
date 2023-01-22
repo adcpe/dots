@@ -1,8 +1,7 @@
 # pacman/yay
 abbr paci 'yay -S'
-abbr pacun 'yay -Rcs'
-abbr pacu 'yay -Syu'
-abbr pacup 'yay -Syyu'
+abbr pacun 'yay -Rns'
+abbr pacup 'yay -Syu'
 abbr pacro 'yay -Rcs (yay -Qdtq)'
 abbr pacs 'yay -Ss'
 abbr pacsl 'yay -Qs'
