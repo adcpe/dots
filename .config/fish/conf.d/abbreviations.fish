@@ -7,6 +7,8 @@ abbr pacs 'yay -Ss'
 abbr pacsl 'yay -Qs'
 abbr paccc 'yay -Sc'
 abbr pacinfo 'yay -Si'
+abbr pacq 'yay -Q'
+abbr pacqs 'yay -Qs'
 abbr paccount 'yay -Q | wc -l'
 
 # git
