@@ -1,6 +1,7 @@
-"$schema" = 'https://starship.rs/config-schema.json'
+"$schema" = "https://starship.rs/config-schema.json"
 
 format = """
+$shell\
 $username\
 [@](bold white)\
 $hostname\
@@ -12,7 +13,6 @@ $git_metrics\
 $git_status\
 $fill\
 $time\
-$shell\
 $character
 """
 
@@ -24,17 +24,24 @@ symbol = " "
 [line_break]
 disabled = true
 
+[shell]
+disabled = false
+format = "[$indicator]($style) "
+style = "bold white"
+bash_indicator = "b"
+fish_indicator = "f"
+
 [username]
 disabled = false
 style_user = "bold green"
-format = '[$user]($style)'
+format = "[$user]($style)"
 show_always = true
 
 [hostname]
 disabled = false
 ssh_only = false
 style = "bold green"
-format = '[$hostname]($style)'
+format = "[$hostname]($style)"
 
 [directory]
 home_symbol = "~"
@@ -43,23 +50,23 @@ truncate_to_repo = false
 style = "bold yellow"
 use_logical_path = true
 fish_style_pwd_dir_length = 1
-format = ' [$path]($style)'
+format = " [$path]($style)"
 
 [git_branch]
 disabled = false
-format = ' [$symbol$branch(:$remote_branch)]($style)'
+format = " [$symbol$branch(:$remote_branch)]($style)"
 only_attached = false
 style = "bold blue"
 
 [git_commit]
 disabled = false
-format = ' [$hash$tag]($style)'
+format = " [$hash$tag]($style)"
 only_detached = true
 style = "bold blue"
 
 [git_state]
 disabled = false
-format = ' [$state( $progress_current/$progress_total)]($style)'
+format = " [$state( $progress_current/$progress_total)]($style)"
 style = "bold blue"
 
 [git_metrics]
@@ -70,31 +77,16 @@ format = " ([+$added]($added_style)) ([-$deleted]($deleted_style))"
 
 [git_status]
 disabled = false
-format = ' ([$all_status$ahead_behind]($style))'
+format = " ([$all_status$ahead_behind]($style))"
 ignore_submodules = false
 style = "bold blue"
 
 [time]
 disabled = false
-format = ' [$time]($style)'
+format = "[$time]($style)"
 style = "bold white"
 use_12hr = false
 utc_time_offset = "local"
-
-[shell]
-disabled = false
-format = ' [$indicator]($style)'
-style = "bold cyan"
-bash_indicator='bash'
-fish_indicator='fish'
-zsh_indicator='zsh'
-powershell_indicator='powershell'
-ion_indicator='ion'
-elvish_indicator='elvish'
-tcsh_indicator='tcsh'
-xonsh_indicator='xonsh'
-cmd_indicator='cmd'
-nu_indicator='nu'
 
 [character]
 format = "$symbol "

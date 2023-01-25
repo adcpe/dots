@@ -8,7 +8,7 @@
   "redhat.telemetry.enabled": false,
   "telemetry.telemetryLevel": "off",
 
-  "workbench.colorTheme": "Ayu Mirage",
+  "workbench.colorTheme": "Catppuccin Frappé",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "material-product-icons",
   "workbench.enableExperiments": false,
@@ -17,7 +17,7 @@
   "terminal.integrated.defaultProfile.linux": "fish",
 
   // fonts, etc
-  "editor.fontFamily": "Noto Sans Mono, Inconsolata, Fira Code, Victor Mono, Hack, Iosevka",
+  "editor.fontFamily": "Cascadia Mono, Inconsolata, Fira Mono, Victor Mono, Hack, Iosevka",
   "editor.fontWeight": "400",
   "editor.fontSize": 18,
   "editor.fontLigatures": false,
