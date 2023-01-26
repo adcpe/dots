@@ -182,5 +182,8 @@
   "material-icon-theme.folders.color": "#26a69a",
   "security.workspace.trust.untrustedFiles": "open",
   "github.gitProtocol": "ssh",
-  "editor.bracketPairColorization.enabled": false
+  "editor.bracketPairColorization.enabled": false,
+  "catppuccin.accentColor": "green",
+  "catppuccin.bracketMode": "neovim",
+  "catppuccin.workbenchMode": "flat"
 }
