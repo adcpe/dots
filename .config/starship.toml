@@ -28,8 +28,6 @@ disabled = true
 disabled = false
 format = "[$indicator]($style) "
 style = "bold white"
-bash_indicator = "b"
-fish_indicator = "f"
 
 [username]
 disabled = false
