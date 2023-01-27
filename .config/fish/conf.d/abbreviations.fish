@@ -84,10 +84,10 @@ abbr afcurr 'asdf current'
 
 # exa/ls
 abbr ls 'exa --group-directories-first --icons'
+abbr la 'exa --group-directories-first --icons --all'
 abbr ll 'exa --group-directories-first --icons --long --header --git'
-abbr lsa 'exa --group-directories-first --icons --all'
-abbr lsg 'exa --group-directories-first --icons --git'
-abbr lst 'exa --group-directories-first --icons --tree'
+abbr lla 'exa --group-directories-first --icons --long --header --git --all'
+abbr lt 'exa --group-directories-first --icons --tree'
 
 # various
 abbr c code
