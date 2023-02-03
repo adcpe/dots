@@ -57,23 +57,28 @@
   "files.insertFinalNewline": true,
   "explorer.confirmDragAndDrop": false,
 
-  // ruby
   "ruby.useBundler": true,
   "ruby.useLanguageServer": true,
   "ruby.lint": {
     "rubocop": {
+      "command": "/home/adc/.config/asdf/shims/rubocop",
       "useBundler": true
     },
     "reek": {
+      "command": "/home/adc/.config/asdf/shims/reek",
       "useBundler": true
     }
   },
   "ruby.format": "rubocop",
   "code-runner.executorMap": {
-    "ruby": "/home/adc/.config/asdf/shims/solargraph"
+    "ruby": "/home/adc/.config/asdf/shims/ruby"
   },
+  "ruby.interpreter.commandPath": "/home/adc/.config/asdf/shims/ruby",
   "solargraph.commandPath": "/home/adc/.config/asdf/shims/solargraph",
   "solargraph.formatting": true,
+  "solargraph.diagnostics": false,
+  "solargraph.checkGemVersion": false,
+  "solargraph.useBundler": false,
 
   // file associations
   "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
