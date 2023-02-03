@@ -67,7 +67,7 @@ abbr npig 'npm i -g'
 # vpn
 abbr vpnin 'protonvpn-cli login'
 abbr vpnc 'protonvpn-cli connect'
-abbr vpncf 'protonvpn-cli connect -f'
+abbr vpncf 'protonvpn-cli connect --fastest'
 abbr vpndc 'protonvpn-cli disconnect'
 abbr vpnst 'protonvpn-cli status'
 
