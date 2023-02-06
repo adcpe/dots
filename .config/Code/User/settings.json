@@ -190,5 +190,7 @@
   "editor.bracketPairColorization.enabled": false,
   "catppuccin.accentColor": "green",
   "catppuccin.bracketMode": "neovim",
-  "catppuccin.workbenchMode": "flat"
+  "catppuccin.workbenchMode": "flat",
+  "php.validate.executablePath": "/home/adc/.config/asdf/shims/php",
+  "git.openRepositoryInParentFolders": "never"
 }
