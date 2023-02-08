@@ -1,10 +1,10 @@
 "$schema" = "https://starship.rs/config-schema.json"
 
 format = """
-$shell\
 $username\
-[@](bold white)\
+[@](bold fg:bright-white)\
 $hostname\
+$shell\
 $directory\
 $git_branch\
 $git_commit\
@@ -24,28 +24,30 @@ symbol = " "
 [line_break]
 disabled = true
 
-[shell]
-disabled = false
-format = "[$indicator]($style) "
-style = "bold white"
-
 [username]
 disabled = false
-style_user = "bold green"
+style_user = "bold bright-green"
 format = "[$user]($style)"
 show_always = true
 
 [hostname]
 disabled = false
 ssh_only = false
-style = "bold green"
+style = "bold bright-green"
 format = "[$hostname]($style)"
+
+[shell]
+disabled = false
+format = " [$indicator]($style)"
+style = "bold red"
+bash_indicator = "[bsh](bold bright-red)"
+fish_indicator = "[fsh](bold bright-blue)"
 
 [directory]
 home_symbol = "~"
 truncation_length = 0
 truncate_to_repo = false
-style = "bold yellow"
+style = "bold bright-yellow"
 use_logical_path = true
 fish_style_pwd_dir_length = 1
 format = " [$path]($style)"
@@ -54,46 +56,46 @@ format = " [$path]($style)"
 disabled = false
 format = " [$symbol$branch(:$remote_branch)]($style)"
 only_attached = false
-style = "bold blue"
+style = "bold bright-blue"
 
 [git_commit]
 disabled = false
 format = " [$hash$tag]($style)"
 only_detached = true
-style = "bold blue"
+style = "bold bright-blue"
 
 [git_state]
 disabled = false
 format = " [$state( $progress_current/$progress_total)]($style)"
-style = "bold blue"
+style = "bold bright-blue"
 
 [git_metrics]
 disabled = false
-added_style = "bold blue"
-deleted_style = "bold blue"
+added_style = "bold bright-blue"
+deleted_style = "bold bright-blue"
 format = " ([+$added]($added_style)) ([-$deleted]($deleted_style))"
 
 [git_status]
 disabled = false
 format = " ([$all_status$ahead_behind]($style))"
 ignore_submodules = false
-style = "bold blue"
+style = "bold bright-blue"
 
 [time]
 disabled = false
 format = "[$time]($style)"
-style = "bold white"
+style = "bold bright-white"
 use_12hr = false
 utc_time_offset = "local"
 
 [character]
 format = "$symbol "
-success_symbol = "[\n❯](bold green)"
-error_symbol = "[\n❯](bold red)"
-vimcmd_replace_one_symbol = "[\n❮](bold purple)"
-vimcmd_replace_symbol = "[\n❮](bold purple)"
-vimcmd_symbol = "[\n❮](bold green)"
-vimcmd_visual_symbol = "[\n❮](bold yellow)"
+success_symbol = "[\n❯](bold bright-green)"
+error_symbol = "[\n❯](bold bright-red)"
+vimcmd_replace_one_symbol = "[\n❮](bold bright-purple)"
+vimcmd_replace_symbol = "[\n❮](bold bright-purple)"
+vimcmd_symbol = "[\n❮](bold bright-green)"
+vimcmd_visual_symbol = "[\n❮](bold bright-yellow)"
 
 [package]
 disabled = false

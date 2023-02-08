@@ -1,18 +1,17 @@
 {
-  "window.title": "${dirty}${activeFolderMedium}/${activeEditorShort}${separator}${rootName}${separator}${appName}",
+  "workbench.colorTheme": "Twin Black Flat",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.tree.renderIndentGuides": "none",
   "window.titleBarStyle": "custom",
+  "window.title": "${dirty}${activeFolderMedium}/${activeEditorShort}${separator}${rootName}${separator}${appName}",
 
   // telemetry
   "code-runner.enableAppInsights": false,
   "gitlens.telemetry.enabled": false,
   "redhat.telemetry.enabled": false,
   "telemetry.telemetryLevel": "off",
-
-  "workbench.colorTheme": "Catppuccin Frappé",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.productIconTheme": "material-product-icons",
   "workbench.enableExperiments": false,
-  "workbench.tree.renderIndentGuides": "none",
 
   "terminal.integrated.defaultProfile.linux": "fish",
 
@@ -92,10 +91,13 @@
   "[properties]": { "editor.defaultFormatter": "yy0931.gitconfig-lsp" },
   "[pug]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[ruby]": { "editor.defaultFormatter": "castwide.solargraph" },
-  "[sass]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[sass]": { "editor.defaultFormatter": "syler.sass-indented" },
   "[scss]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[vue]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
+  // php
+  "php.validate.executablePath": "/home/adc/.config/asdf/shims/php",
 
   "emmet.includeLanguages": {
     "django-html": "html",
@@ -122,30 +124,6 @@
   "diffEditor.codeLens": true,
   "gitlens.codeLens.enabled": false,
   "diffEditor.ignoreTrimWhitespace": false,
-
-  // cSpell
-  "cSpell.enableFiletypes": ["md", "!*"],
-  "cSpell.userWords": [
-    "adcpe",
-    "Alacritty",
-    "castwide",
-    "Codesandbox",
-    "dotfiles",
-    "gitmodules",
-    "Laravel",
-    "Nord",
-    "Nuxt",
-    "pomodoro",
-    "postlist",
-    "readdir",
-    "rebornix",
-    "Rubocop",
-    "Solargraph",
-    "templating",
-    "Unported",
-    "unstage",
-    "wordcount"
-  ],
 
   "editor.minimap.renderCharacters": false,
   "xml.server.vmargs": "-Xmx256M",
@@ -191,6 +169,5 @@
   "catppuccin.accentColor": "green",
   "catppuccin.bracketMode": "neovim",
   "catppuccin.workbenchMode": "flat",
-  "php.validate.executablePath": "/home/adc/.config/asdf/shims/php",
   "git.openRepositoryInParentFolders": "never"
 }
