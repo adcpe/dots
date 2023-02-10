@@ -4,7 +4,7 @@ function refresh_mirrors -d "Update pacman mirrorlist"
         echo ""
         echo "Installing reflector."
         echo ""
-        sudo pacman -S reflector
+        sudo pacman -S --needed --noconfirm reflector
     end
 
     echo ""

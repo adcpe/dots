@@ -35,7 +35,7 @@ abbr gb 'git branch'
 abbr gd 'git diff'
 abbr gl 'git ll'
 
-# dotfiles repo at $HOME
+# dotfiles bare repo at $HOME
 abbr da 'dots add'
 abbr ddf 'dots diff'
 abbr ds 'dots status -sb'
@@ -82,12 +82,18 @@ abbr afls 'asdf list'
 abbr aflsa 'asdf list all'
 abbr afcurr 'asdf current'
 
-# exa/ls
-abbr ls 'exa --group-directories-first --icons'
-abbr la 'exa --group-directories-first --icons --all'
-abbr ll 'exa --group-directories-first --icons --long --header --git'
-abbr lla 'exa --group-directories-first --icons --long --header --git --all'
-abbr lt 'exa --group-directories-first --icons --tree'
+# exa
+abbr els 'exa --group-directories-first --icons'
+abbr ela 'exa --group-directories-first --icons --all --long'
+abbr ell 'exa --group-directories-first --icons --long --header --git'
+abbr ella 'exa --group-directories-first --icons --long --all --header --git'
+abbr elt 'exa --group-directories-first --icons --tree'
+
+# colorls
+abbr cls 'colorls --group-directories-first '
+abbr cla 'colorls --group-directories-first --all --long'
+abbr cll 'colorls --group-directories-first --long --git-status'
+abbr clla 'colorls --group-directories-first --long --all --git-status'
 
 # various
 abbr c code

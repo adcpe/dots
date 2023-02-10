@@ -1,3 +1,5 @@
+bundler
+colorls
 rails
 reek
 rubocop-airbnb

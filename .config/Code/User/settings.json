@@ -16,7 +16,7 @@
   "terminal.integrated.defaultProfile.linux": "fish",
 
   // fonts, etc
-  "editor.fontFamily": "Cascadia Mono, Inconsolata, Fira Mono, Victor Mono, Hack, Iosevka",
+  "editor.fontFamily": "Cascadia Mono, Inconsolata, Fira Mono, Victor Mono, Hack, Iosevka, Noto Color Emoji",
   "editor.fontWeight": "400",
   "editor.fontSize": 18,
   "editor.fontLigatures": false,
@@ -45,7 +45,7 @@
   "explorer.compactFolders": false,
 
   // markdown preview
-  "markdown.preview.fontFamily": "Noto Sans, Ubuntu, Droid Sans, sans-serif",
+  "markdown.preview.fontFamily": "Noto Sans, Ubuntu, Droid Sans, Noto Color Emoji, sans-serif",
   "markdown.preview.fontSize": 18,
 
   "code-runner.clearPreviousOutput": true,
@@ -58,26 +58,16 @@
 
   "ruby.useBundler": true,
   "ruby.useLanguageServer": true,
-  "ruby.lint": {
-    "rubocop": {
-      "command": "/home/adc/.config/asdf/shims/rubocop",
-      "useBundler": true
-    },
-    "reek": {
-      "command": "/home/adc/.config/asdf/shims/reek",
-      "useBundler": true
-    }
-  },
   "ruby.format": "rubocop",
-  "code-runner.executorMap": {
-    "ruby": "/home/adc/.config/asdf/shims/ruby"
-  },
-  "ruby.interpreter.commandPath": "/home/adc/.config/asdf/shims/ruby",
-  "solargraph.commandPath": "/home/adc/.config/asdf/shims/solargraph",
+  "ruby.lint": { "rubocop": true },
   "solargraph.formatting": true,
   "solargraph.diagnostics": false,
   "solargraph.checkGemVersion": false,
-  "solargraph.useBundler": false,
+  "solargraph.useBundler": true,
+  "code-runner.executorMap": { "ruby": "/home/adc/.config/asdf/shims/ruby" },
+  "ruby.interpreter.commandPath": "/home/adc/.config/asdf/shims/ruby",
+  "solargraph.commandPath": "/home/adc/.config/asdf/shims/solargraph",
+  "ruby.pathToBundler": "/home/adc/.config/asdf/shims/bundle",
 
   // file associations
   "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
@@ -114,7 +104,8 @@
     "*.styl": "stylus",
     "*.sass": "sass",
     "*.json": "jsonc",
-    "*.njk": "nunjucks"
+    "*.njk": "nunjucks",
+    "*.theme": "plaintext"
   },
 
   "emmet.triggerExpansionOnTab": true,
