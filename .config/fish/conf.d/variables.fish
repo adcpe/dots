@@ -14,12 +14,12 @@ set -Ux ASDF_NPM_DEFAULT_PACKAGES_FILE $HOME/.config/asdf/default-npm-packages
 set -Ux ASDF_GEM_DEFAULT_PACKAGES_FILE $HOME/.config/asdf/default-gems
 set -Ux ASDF_PYTHON_DEFAULT_PACKAGES_FILE $HOME/.config/asdf/default-python-packages
 
-set -Ux PNPM_HOME ~/.local/share/pnpm
-set -Ux PATH $PNPM_HOME $PATH
+set -gx PNPM_HOME $HOME/.local/share/pnpm
+set -gx PATH $PNPM_HOME $PATH
 
-# set -Ux GEM_HOME (ruby -e 'puts Gem.user_dir')
-# set -Ux PATH $GEM_HOME/bin $PATH
+# set -gx GEM_HOME (ruby -e 'puts Gem.user_dir')
+# set -gx PATH $GEM_HOME/bin $PATH
 
 set -Ux GTK_USE_PORTAL 1
 
-set -Ux CODEX_FILE ~/.config/Code/User/codex
+set -Ux CODEX_FILE $HOME/.config/Code/User/codex
