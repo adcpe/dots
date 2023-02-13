@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Twin Black Flat",
+  "workbench.colorTheme": "Twin Blue Flat",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "material-product-icons",
   "workbench.tree.renderIndentGuides": "none",
@@ -29,15 +29,16 @@
   "editor.mouseWheelZoom": false,
   "editor.guides.indentation": false,
   "editor.guides.highlightActiveIndentation": false,
-  "editor.rulers": [
-    { "column": 80, "color": "#FFFF0040" },
-    { "column": 100, "color": "#FF000040" }
-  ],
   "editor.minimap.maxColumn": 100,
   "editor.minimap.showSlider": "always",
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "editor.formatOnPaste": true,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.rulers": [
+    { "column": 80, "color": "#FFFF0040" },
+    { "column": 100, "color": "#FF000040" }
+  ],
 
   "files.autoSave": "afterDelay",
   "extensions.autoUpdate": true,
@@ -48,7 +49,6 @@
   "markdown.preview.fontFamily": "Noto Sans, Ubuntu, Droid Sans, Noto Color Emoji, sans-serif",
   "markdown.preview.fontSize": 18,
 
-  "code-runner.clearPreviousOutput": true,
   "explorer.confirmDelete": false,
   "git.confirmSync": false,
   "git.autofetch": true,
@@ -56,18 +56,25 @@
   "files.insertFinalNewline": true,
   "explorer.confirmDragAndDrop": false,
 
-  "ruby.useBundler": true,
+  "ruby.useBundler": false,
   "ruby.useLanguageServer": true,
-  "ruby.format": "rubocop",
-  "ruby.lint": { "rubocop": true },
+  "ruby.format": false,
+  "ruby.lint": {
+    "rubocop": {
+      "command": "/home/adc/.config/asdf/installs/ruby/3.0.5/bin/rubocop",
+      "useBundler": false
+    }
+  },
   "solargraph.formatting": true,
   "solargraph.diagnostics": false,
   "solargraph.checkGemVersion": false,
-  "solargraph.useBundler": true,
-  "code-runner.executorMap": { "ruby": "/home/adc/.config/asdf/shims/ruby" },
-  "ruby.interpreter.commandPath": "/home/adc/.config/asdf/shims/ruby",
-  "solargraph.commandPath": "/home/adc/.config/asdf/shims/solargraph",
-  "ruby.pathToBundler": "/home/adc/.config/asdf/shims/bundle",
+  "solargraph.useBundler": false,
+  "code-runner.executorMap": { "ruby": "/home/adc/.config/asdf/installs/ruby/3.0.5/bin/ruby" },
+  "ruby.pathToBundler": "/home/adc/.config/asdf/installs/ruby/3.0.5/bin/bundle",
+  "ruby.interpreter.commandPath": "/home/adc/.config/asdf/installs/ruby/3.0.5/bin/ruby",
+  "solargraph.commandPath": "/home/adc/.config/asdf/installs/ruby/3.0.5/bin/solargraph",
+
+  "code-runner.clearPreviousOutput": true,
 
   // file associations
   "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
@@ -128,6 +135,8 @@
     "html": true
   },
   "volar.icon.preview": false,
+
+  // base 16
   "base16.generator.activatedThemes": [
     "base16-dracula-dark",
     "base16-gruvbox-dark-hard",
@@ -138,6 +147,8 @@
     "base16-gruvbox-material-dark-medium",
     "base16-gruvbox-material-dark-soft"
   ],
+
+  // indent rainbow
   "indentRainbow.indicatorStyle": "light",
   "indentRainbow.lightIndicatorStyleLineWidth": 2,
   "indentRainbow.updateDelay": 1000,
@@ -156,9 +167,9 @@
   "material-icon-theme.folders.color": "#26a69a",
   "security.workspace.trust.untrustedFiles": "open",
   "github.gitProtocol": "ssh",
-  "editor.bracketPairColorization.enabled": false,
   "catppuccin.accentColor": "green",
   "catppuccin.bracketMode": "neovim",
   "catppuccin.workbenchMode": "flat",
-  "git.openRepositoryInParentFolders": "never"
+  "git.openRepositoryInParentFolders": "never",
+  "window.menuBarVisibility": "compact"
 }
