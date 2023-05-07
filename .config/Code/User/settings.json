@@ -94,7 +94,7 @@
   "[vue]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
 
   // php
-  "php.validate.executablePath": "/home/adc/.config/asdf/shims/php",
+  "php.validate.executablePath": "/home/adc/.config/asdf/installs/php/8.2.0/bin/php",
 
   "emmet.includeLanguages": {
     "django-html": "html",
