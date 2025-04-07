@@ -8,7 +8,7 @@ function refresh_mirrors -d "Update pacman mirrorlist"
     end
 
     echo ""
-    sudo reflector --verbose --country br,ar,us,ca --fastest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+    sudo reflector --verbose --country us --fastest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
     echo ""
     echo "Operation complete!"
     echo ""

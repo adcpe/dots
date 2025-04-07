@@ -2,7 +2,7 @@
     name = Andrés Del Carpio
     email = adc@adc.pe
 [core]
-    editor = nvim
+    editor = nano
 [init]
     defaultBranch = main
 [alias]
