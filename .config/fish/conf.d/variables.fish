@@ -3,7 +3,7 @@ set -Ux fish_greeting
 set -Ux sponge_purge_only_on_exit true
 
 set -Ux VISUAL kate
-set -Ux EDITOR nvim
+set -Ux EDITOR nano
 set -Ux XDG_CONFIG_HOME $HOME/.config
 
 set -Ux ASDF_DIR $HOME/.config/asdf/.asdf
@@ -17,8 +17,8 @@ set -Ux ASDF_PYTHON_DEFAULT_PACKAGES_FILE $HOME/.config/asdf/default-python-pack
 set -gx PNPM_HOME $HOME/.local/share/pnpm
 set -gx PATH $PNPM_HOME $PATH
 
-# set -gx GEM_HOME (ruby -e 'puts Gem.user_dir')
-# set -gx PATH $GEM_HOME/bin $PATH
+set -gx GEM_HOME (gem env user_gemhome)
+set -gx PATH $GEM_HOME/bin $PATH
 
 set -Ux GTK_USE_PORTAL 1
 
