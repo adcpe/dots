@@ -15,10 +15,8 @@ set -Ux ASDF_GEM_DEFAULT_PACKAGES_FILE $HOME/.config/asdf/default-gems
 set -Ux ASDF_PYTHON_DEFAULT_PACKAGES_FILE $HOME/.config/asdf/default-python-packages
 
 set -gx PNPM_HOME $HOME/.local/share/pnpm
-set -gx PATH $PNPM_HOME $PATH
-
 set -gx GEM_HOME (gem env user_gemhome)
-set -gx PATH $GEM_HOME/bin $PATH
+set -gx PATH $PNPM_HOME $GEM_HOME/bin $PATH
 
 set -Ux GTK_USE_PORTAL 1
 

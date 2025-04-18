@@ -40,8 +40,9 @@ format = "[$hostname]($style)"
 disabled = false
 format = " [$indicator]($style)"
 style = "bold red"
-bash_indicator = "[bsh](bold bright-red)"
-fish_indicator = "[fsh](bold bright-blue)"
+bash_indicator = "[bash](bold bright-red)"
+fish_indicator = "[fish](bold bright-blue)"
+zsh_indicator = "[zsh](bold bright-green)"
 
 [directory]
 home_symbol = "~"

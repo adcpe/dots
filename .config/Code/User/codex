@@ -10,7 +10,6 @@ bierner.markdown-yaml-preamble
 bmalehorn.vscode-fish
 bradlc.vscode-tailwindcss
 brittanychiang.halcyon-vscode
-castwide.solargraph
 catppuccin.catppuccin-vsc
 dracula-theme.theme-dracula
 dsznajder.es7-react-js-snippets
@@ -38,7 +37,6 @@ oderwat.indent-rainbow
 pkief.material-icon-theme
 pkief.material-product-icons
 redhat.vscode-xml
-rust-lang.rust-analyzer
 sdras.night-owl
 sdras.vue-vscode-snippets
 shopify.ruby-lsp
