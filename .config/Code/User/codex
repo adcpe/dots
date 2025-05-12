@@ -11,6 +11,7 @@ bmalehorn.vscode-fish
 bradlc.vscode-tailwindcss
 brittanychiang.halcyon-vscode
 catppuccin.catppuccin-vsc
+catppuccin.catppuccin-vsc-icons
 dracula-theme.theme-dracula
 dsznajder.es7-react-js-snippets
 eamodio.gitlens
@@ -18,6 +19,7 @@ emmanuelbeziat.vscode-great-icons
 esbenp.prettier-vscode
 formulahendry.code-runner
 foxundermoon.shell-format
+ginfuru.better-nunjucks
 github.vscode-pull-request-github
 golang.go
 golf1052.base16-generator
@@ -40,6 +42,7 @@ redhat.vscode-xml
 sdras.night-owl
 sdras.vue-vscode-snippets
 shopify.ruby-lsp
+sissel.shopify-liquid
 syler.sass-indented
 tamasfe.even-better-toml
 teabyii.ayu

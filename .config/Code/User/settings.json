@@ -1,10 +1,10 @@
 {
-  "workbench.colorTheme": "Twin Black",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Twin Blue Flat",
+  "workbench.iconTheme": "catppuccin-mocha",
   "workbench.productIconTheme": "material-product-icons",
   "workbench.tree.renderIndentGuides": "none",
   "window.titleBarStyle": "custom",
-  "window.title": "${dirty}${activeFolderMedium}/${activeEditorShort}${separator}${rootName}${separator}${appName}",
+  "window.title": "${dirty}${appName}${separator}${rootName}${separator}${activeFolderMedium}/${activeEditorShort}",
 
   // telemetry
   "code-runner.enableAppInsights": false,
@@ -16,7 +16,7 @@
   "terminal.integrated.defaultProfile.linux": "fish",
 
   // fonts, etc
-  "editor.fontFamily": "Inconsolata, Mononoki Nerd Font, Cascadia Code NF, Hack, Iosevka, IBM Plex Mono, Fira Mono, VictorMono Nerd Font, Noto Sans Mono",
+  "editor.fontFamily": "IBM Plex Mono, Noto Sans Mono, Hack, Cascadia Code NF, Inconsolata, Mononoki Nerd Font, Iosevka, Fira Mono, VictorMono Nerd Font",
   "editor.fontWeight": "400",
   "editor.fontSize": 18,
   "editor.fontLigatures": false,
@@ -26,20 +26,23 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "line",
+  "editor.cursorWidth": 2,
   "editor.mouseWheelZoom": false,
   "editor.guides.indentation": false,
   "editor.guides.highlightActiveIndentation": false,
-  "editor.minimap.maxColumn": 100,
+  "editor.minimap.maxColumn": 80,
   "editor.minimap.showSlider": "always",
+  "editor.minimap.renderCharacters": false,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "editor.formatOnPaste": true,
   "editor.bracketPairColorization.enabled": false,
   "editor.rulers": [
-    { "column": 80, "color": "#FFFF0040" },
-    { "column": 100, "color": "#FF000040" }
+    { "column": 80, "color": "#ffd50011" },
+    { "column": 100, "color": "#eb938611" }
   ],
 
+  "files.trimTrailingWhitespace": true,
   "files.autoSave": "afterDelay",
   "extensions.autoUpdate": true,
   "diffEditor.renderSideBySide": true,
@@ -50,11 +53,11 @@
   "markdown.preview.fontSize": 18,
 
   "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
   "git.confirmSync": false,
   "git.autofetch": true,
-  "editor.cursorWidth": 2,
   "files.insertFinalNewline": true,
-  "explorer.confirmDragAndDrop": false,
+  "workbench.editor.empty.hint": "hidden",
 
   "code-runner.executorMap": { "ruby": "/home/adc/.config/asdf/installs/ruby/3.3.7/bin/ruby" },
 
@@ -76,27 +79,30 @@
   "[scss]": { "editor.defaultFormatter": "vscode.css-language-features" },
   "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[vue]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[webc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
 
   // php
-  "php.validate.executablePath": "/home/adc/.config/asdf/installs/php/8.2.0/bin/php",
+  // "php.validate.executablePath": "/home/adc/.config/asdf/installs/php/8.2.0/bin/php",
 
   "emmet.includeLanguages": {
     "django-html": "html",
     "erb": "html",
     "javascript": "javascriptreact",
-    "njk": "html"
+    "njk": "html",
+    "webc": "html"
   },
   "files.associations": {
     ".gitgnore": "ignore",
     "*.cjs": "javascript",
     "*.erb": "erb",
+    "*.json": "jsonc",
     "*.md": "markdown",
     "*.mdx": "markdown",
+    "*.njk": "html",
     "*.styl": "stylus",
     "*.sass": "sass",
-    "*.json": "jsonc",
-    "*.njk": "nunjucks",
-    "*.theme": "plaintext"
+    "*.theme": "plaintext",
+    "*.webc": "html"
   },
 
   "emmet.triggerExpansionOnTab": true,
@@ -107,11 +113,18 @@
   "gitlens.codeLens.enabled": false,
   "diffEditor.ignoreTrimWhitespace": false,
 
-  "editor.minimap.renderCharacters": false,
   "xml.server.vmargs": "-Xmx256M",
   "xml.symbols.maxItemsComputed": 10000,
   "prettier.configPath": "/home/adc/.prettierrc.js",
-  "prettier.prettierPath": "/home/adc/.config/asdf/shims/prettier",
+  "prettier.prettierPath": "/home/adc/.config/asdf/installs/nodejs/23.9.0/lib/node_modules/prettier/",
+
+  // catpuccin
+  "catppuccin.accentColor": "green",
+  "catppuccin.bracketMode": "neovim",
+  "catppuccin.workbenchMode": "flat",
+  "catppuccin-icons.associations.extensions": {
+    "webc": "html"
+  },
 
   // base 16
   "base16.generator.activatedThemes": [
@@ -482,7 +495,6 @@
     "rgba(79,236,236,0.20)"
   ],
 
-  "files.trimTrailingWhitespace": true,
   "material-icon-theme.folders.associations": {
     "py": "python"
   },
@@ -490,9 +502,8 @@
   "material-icon-theme.folders.color": "#26a69a",
   "security.workspace.trust.untrustedFiles": "open",
   "github.gitProtocol": "ssh",
-  "catppuccin.accentColor": "green",
-  "catppuccin.bracketMode": "neovim",
-  "catppuccin.workbenchMode": "flat",
   "git.openRepositoryInParentFolders": "never",
-  "window.menuBarVisibility": "compact"
+  "window.menuBarVisibility": "compact",
+  "git.ignoreRebaseWarning": true,
+  "terminal.integrated.scrollback": 20000
 }
