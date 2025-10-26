@@ -1,5 +1,0 @@
-complete --command codex --exclusive --long help --description "Print help"
-complete --command codex --exclusive --condition __fish_use_subcommand --arguments install --description "Install extensions"
-complete --command codex --exclusive --condition __fish_use_subcommand --arguments list --description "List installed extensions"
-complete --command codex --exclusive --condition __fish_use_subcommand --arguments backup --description "Backup extensions list"
-complete --command codex --exclusive --condition __fish_use_subcommand --arguments silent-backup --description "Backup extensions list with no messages"

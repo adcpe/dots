@@ -1,0 +1,5 @@
+complete --command vscodex --exclusive --long help --description "Print help"
+complete --command vscodex --exclusive --condition __fish_use_subcommand --arguments install --description "Install extensions"
+complete --command vscodex --exclusive --condition __fish_use_subcommand --arguments list --description "List installed extensions"
+complete --command vscodex --exclusive --condition __fish_use_subcommand --arguments backup --description "Backup extensions list"
+complete --command vscodex --exclusive --condition __fish_use_subcommand --arguments silent-backup --description "Backup extensions list with no messages"

@@ -6,6 +6,9 @@ set -Ux VISUAL kate
 set -Ux EDITOR nano
 set -Ux XDG_CONFIG_HOME $HOME/.config
 
+set -Ux QT_QPA_PLATFORMTHEME qt5ct
+set -Ux QT_QPA_PLATFORM wayland
+
 set -Ux ASDF_DIR $HOME/.config/asdf/.asdf
 set -Ux ASDF_DATA_DIR $HOME/.config/asdf
 set -Ux ASDF_CONFIG_FILE $HOME/.config/asdf/asdfrc
@@ -20,4 +23,4 @@ set -gx PATH $PNPM_HOME $GEM_HOME/bin $PATH
 
 set -Ux GTK_USE_PORTAL 1
 
-set -Ux CODEX_FILE $HOME/.config/Code/User/codex
+set -Ux VSCODEX_FILE $HOME/.config/Code/User/vscodex
