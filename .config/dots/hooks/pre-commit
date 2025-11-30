@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-codex silent-backup
+vscodex silent-backup
 dots add .config/Code/User/vscodex
 dots add .config/Code/User/snippets/.
 dots add .config/Code/User/keybindings.json
