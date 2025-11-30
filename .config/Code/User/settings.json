@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Twin Black",
+  "workbench.colorTheme": "Firefox Dark",
   "workbench.iconTheme": "catppuccin-mocha",
   "workbench.productIconTheme": "material-product-icons",
   "workbench.tree.renderIndentGuides": "none",
@@ -16,12 +16,13 @@
   "terminal.integrated.defaultProfile.linux": "fish",
 
   // fonts, etc
-  "editor.fontFamily": "IBM Plex Mono, Noto Sans Mono, Hack, Cascadia Code NF, Inconsolata, Mononoki Nerd Font, Iosevka, Fira Mono, VictorMono Nerd Font",
+  "editor.fontFamily": "Hack, IBM Plex Mono, Cascadia Code NF, Noto Sans Mono, Inconsolata, Mononoki Nerd Font, Iosevka, Fira Mono, VictorMono Nerd Font",
   "editor.fontWeight": "400",
-  "editor.fontSize": 18,
+  "editor.fontSize": 22,
   "editor.fontLigatures": false,
   "editor.lineHeight": 26,
   "editor.tabSize": 2,
+  "editor.insertSpaces": true,
   "editor.wordWrap": "on",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.cursorBlinking": "solid",
@@ -38,9 +39,16 @@
   "editor.formatOnPaste": true,
   "editor.bracketPairColorization.enabled": false,
   "editor.rulers": [
-    { "column": 80, "color": "#ffd50011" },
-    { "column": 100, "color": "#eb938611" }
+    { "column": 80, "color": "#ffd50039" },
+    { "column": 100, "color": "#eb938639" }
   ],
+
+  // python style rules
+  "[python]": {
+    "editor.tabSize": 4,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
 
   "files.trimTrailingWhitespace": true,
   "files.autoSave": "afterDelay",
