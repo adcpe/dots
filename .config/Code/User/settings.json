@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Firefox Dark",
+  "workbench.colorTheme": "Twin Black",
   "workbench.iconTheme": "catppuccin-mocha",
   "workbench.productIconTheme": "material-product-icons",
   "workbench.tree.renderIndentGuides": "none",
@@ -104,6 +104,7 @@
     "*.cjs": "javascript",
     "*.erb": "erb",
     "*.json": "jsonc",
+    "*.jsx": "javascriptreact",
     "*.md": "markdown",
     "*.mdx": "markdown",
     "*.njk": "html",

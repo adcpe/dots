@@ -15,7 +15,7 @@ module.exports = {
   singleAttributePerLine: false,
   singleQuote: true,
   tabWidth: 2,
-  trailingComma: 'none',
+  trailingComma: 'all',
   useTabs: false,
   vueIndentScriptAndStyle: false
 }
