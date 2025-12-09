@@ -6,7 +6,7 @@ set -Ux VISUAL kate
 set -Ux EDITOR nano
 set -Ux XDG_CONFIG_HOME $HOME/.config
 
-set -Ux QT_QPA_PLATFORMTHEME qt5ct
+set -Ux QT_QPA_PLATFORMTHEME qt6ct
 set -Ux QT_QPA_PLATFORM wayland
 
 set -Ux ASDF_DIR $HOME/.config/asdf/.asdf

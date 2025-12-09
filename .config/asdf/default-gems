@@ -1,5 +1,8 @@
 bundler
 colorls
+erb
+irb
+jekyll
 rails
 reek
 rubocop-airbnb
