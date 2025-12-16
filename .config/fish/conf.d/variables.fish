@@ -24,3 +24,4 @@ set -gx PATH $PNPM_HOME $GEM_HOME/bin $PATH $HOME/.local/bin
 set -Ux GTK_USE_PORTAL 1
 
 set -Ux VSCODEX_FILE $HOME/.config/Code/User/vscodex
+set -Ux CODIUMX_FILE $HOME/.config/VSCodium/User/codiumx

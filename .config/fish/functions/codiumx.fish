@@ -1,31 +1,31 @@
-function vscodex -d "Backups and installs VSCode extensions"
+function codiumx -d "Backups and installs VSCodium extensions"
     switch $argv[1]
         case install i
             echo "Starting installation of extensions"
             echo ""
             while read -a line
-                eval code --install-extension $line
+                eval codium --install-extension $line
                 echo ""
-            end <$VSCODEX_FILE
-            set -l num (count < $VSCODEX_FILE)
+            end <$CODIUMX_FILE
+            set -l num (count < $CODIUMX_FILE)
             echo "Finished installing $num extensions."
         case backup b
-            eval code --list-extensions >$VSCODEX_FILE
-            set -l num (count < $VSCODEX_FILE)
+            eval codium --list-extensions >$CODIUMX_FILE
+            set -l num (count < $CODIUMX_FILE)
             echo "Saved $num extensions."
         case silent-backup sb
-            eval code --list-extensions >$VSCODEX_FILE
+            eval codium --list-extensions >$CODIUMX_FILE
         case list ls
             while read -a line
                 echo "$line"
-            end <$VSCODEX_FILE
-            set -l num (count < $VSCODEX_FILE)
+            end <$CODIUMX_FILE
+            set -l num (count < $CODIUMX_FILE)
             echo "Total extensions: $num"
         case "" help h
-            echo vscodex
-            echo "Script to mass-install extensions or create a list of currently installed extensions on VSCode."
+            echo codiumx
+            echo "Script to mass-install extensions or create a list of currently installed extensions on VSCodium."
             echo ""
-            echo "Usage: vscodex [command]"
+            echo "Usage: codiumx [command]"
             echo ""
             echo Commands
             echo "      install i           : Install extensions from list"
@@ -35,9 +35,9 @@ function vscodex -d "Backups and installs VSCode extensions"
             echo "      help h              : Print this help message"
             echo ""
             echo Variables
-            echo "       \$VSCODEX_FILE  Extension list path. Location: $VSCODEX_FILE" | string replace --regex -- $HOME \~
+            echo "       \$CODIUMX_FILE  Extension list path. Location: $CODIUMX_FILE" | string replace --regex -- $HOME \~
             echo ""
         case "*"
-            echo "vscodex: Unknown command: \"$argv\"" >&2 && return 1
+            echo "codiumx: Unknown command: \"$argv\"" >&2 && return 1
     end
 end
