@@ -1,8 +1,12 @@
 # fish_vi_key_bindings
 
-starship init fish | source
+if type -q starship
+    starship init fish | source
+end
 
-# source $HOME/.config/asdf/asdf.fish
+if test -f $HOME/.config/asdf/asdf.fish
+    source $HOME/.config/asdf/asdf.fish
+end
 
 # ASDF configuration code
 if test -z $ASDF_DATA_DIR
@@ -18,4 +22,6 @@ if not contains $_asdf_shims $PATH
 end
 set --erase _asdf_shims
 
-fastfetch -c ~/.config/fastfetch/config-small.jsonc
+if type -q fastfetch
+    fastfetch -c ~/.config/fastfetch/config-small.jsonc
+end

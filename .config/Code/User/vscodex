@@ -26,6 +26,7 @@ github.vscode-pull-request-github
 golang.go
 golf1052.base16-generator
 heron.firefox-devtools-theme
+kdl-org.kdl
 mads-hartmann.bash-ide-vscode
 mikestead.dotenv
 ms-azuretools.vscode-containers
@@ -50,8 +51,6 @@ sdras.vue-vscode-snippets
 shopify.ruby-lsp
 sissel.shopify-liquid
 syler.sass-indented
-tamasfe.even-better-toml
-teabyii.ayu
 twin-themes.twin-vsc
 vayan.haml
 vue.volar
