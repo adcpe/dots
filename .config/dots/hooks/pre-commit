@@ -11,6 +11,3 @@ dots add .config/VSCodium/User/codiumx
 dots add .config/VSCodium/User/snippets/.
 dots add .config/VSCodium/User/keybindings.json
 dots add .config/VSCodium/User/settings.json
-
-dots add .local/share/fish/fish_history
-dots add .local/share/z/data

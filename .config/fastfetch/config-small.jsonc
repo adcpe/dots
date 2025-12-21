@@ -7,10 +7,6 @@
       "left": 2,
       "right": 2
     },
-    "color": {             // Override logo colors
-        "1": "blue",
-        "2": "blue"
-    },
     "printRemaining": true,
     "preserveAspectRatio": false,
     "recache": false,

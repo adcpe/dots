@@ -1,5 +1,4 @@
 aliariff.vscode-erb-beautify
-beastdestroyer.firefox-quantum-themes
 bierner.github-markdown-preview
 bierner.markdown-checkbox
 bierner.markdown-emoji
@@ -20,13 +19,12 @@ esbenp.prettier-vscode
 formulahendry.code-runner
 foxundermoon.shell-format
 ginfuru.better-nunjucks
-github.copilot
-github.copilot-chat
 github.vscode-pull-request-github
 golang.go
 golf1052.base16-generator
-heron.firefox-devtools-theme
+hyprluna.hyprluna-theme
 kdl-org.kdl
+local.dynamic-base16-dankshell
 mads-hartmann.bash-ide-vscode
 mikestead.dotenv
 ms-azuretools.vscode-containers
@@ -41,6 +39,7 @@ ms-toolsai.jupyter-keymap
 ms-toolsai.jupyter-renderers
 ms-toolsai.vscode-jupyter-cell-tags
 ms-toolsai.vscode-jupyter-slideshow
+noctalia.noctaliatheme
 oderwat.indent-rainbow
 openai.chatgpt
 pkief.material-icon-theme
@@ -51,6 +50,10 @@ sdras.vue-vscode-snippets
 shopify.ruby-lsp
 sissel.shopify-liquid
 syler.sass-indented
+tamasfe.even-better-toml
+teabyii.ayu
+theqtcompany.qt-core
+theqtcompany.qt-qml
 twin-themes.twin-vsc
 vayan.haml
 vue.volar

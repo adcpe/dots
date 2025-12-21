@@ -14,12 +14,12 @@ esbenp.prettier-vscode
 formulahendry.code-runner
 foxundermoon.shell-format
 ginfuru.better-nunjucks
-github.vscode-pull-request-github
 golang.go
 golf1052.base16-generator
 mads-hartmann.bash-ide-vscode
 mikestead.dotenv
 ms-azuretools.vscode-containers
+ms-pyright.pyright
 ms-python.autopep8
 ms-python.debugpy
 ms-python.isort
