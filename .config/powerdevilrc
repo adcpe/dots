@@ -1,0 +1,11 @@
+[AC][Display]
+DimDisplayIdleTimeoutSec=60
+TurnOffDisplayIdleTimeoutSec=120
+TurnOffDisplayIdleTimeoutWhenLockedSec=20
+
+[AC][SuspendAndShutdown]
+AutoSuspendAction=0
+SleepMode=3
+
+[Inhibitions]
+BlockedInhibitions=net.lutris.battlenet-1:Running game: Battle.net,com.feralinteractive.GameMode:GameMode Activated

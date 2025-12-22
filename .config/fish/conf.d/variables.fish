@@ -2,12 +2,18 @@ set -Ux fish_greeting
 
 set -Ux sponge_purge_only_on_exit true
 
-set -Ux VISUAL kate
+set -Ux VISUAL code
 set -Ux EDITOR nano
 set -Ux XDG_CONFIG_HOME $HOME/.config
 
-set -Ux QT_QPA_PLATFORMTHEME qt6ct
+set -Ux GTK_USE_PORTAL 1
+set -Ux QT_SCALE_FACTOR 1
+set -Ux MOZ_ENABLE_WAYLAND 1
 set -Ux QT_QPA_PLATFORM wayland
+# set -Ux QT_QPA_PLATFORMTHEME gtk3
+# set -Ux QT_QPA_PLATFORMTHEME qt6ct
+set -Ux QT_QPA_PLATFORMTHEME_QT6 qt6ct
+set -Ux ELECTRON_OZONE_PLATFORM_HINT auto
 
 set -Ux ASDF_DIR $HOME/.config/asdf/.asdf
 set -Ux ASDF_DATA_DIR $HOME/.config/asdf
@@ -24,8 +30,6 @@ if type -q gem
     set -gx GEM_HOME (gem env user_gemhome)
     set -gx PATH $GEM_HOME/bin $PATH
 end
-
-set -Ux GTK_USE_PORTAL 1
 
 set -Ux VSCODEX_FILE $HOME/.config/Code/User/vscodex
 set -Ux CODIUMX_FILE $HOME/.config/VSCodium/User/codiumx

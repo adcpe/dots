@@ -1,0 +1,6 @@
+[Daemon]
+Autolock=false
+Timeout=0
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=/home/adc/Pictures/variety-copied-wallpaper-6551dd314ec7db42ebe6642c711c159d.jpg
