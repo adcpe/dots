@@ -1,0 +1,7 @@
+{
+  "wallpaperShufflerPlugin": {
+    "enabled": true,
+    "shuffleInterval": "86400",
+    "wallpaperPath": "~/Wallpapers"
+  }
+}

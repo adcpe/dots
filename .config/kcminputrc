@@ -5,4 +5,4 @@ PointerAccelerationProfile=1
 [Mouse]
 X11LibInputXAccelProfileFlat=true
 cursorSize=48
-cursorTheme=Layan-border-cursors
+cursorTheme=Breeze_Light

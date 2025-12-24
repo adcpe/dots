@@ -94,7 +94,7 @@
                     "hideMode": "hidden",
                     "id": "ActiveWindow",
                     "maxWidth": 400,
-                    "scrollingMode": "never",
+                    "scrollingMode": "always",
                     "showIcon": true,
                     "useFixedWidth": true
                 }
@@ -271,7 +271,7 @@
             "org.kde.kdenlive"
         ],
         "pinnedStatic": false,
-        "size": 1
+        "size": 1.5
     },
     "general": {
         "allowPanelsOnScreenWithoutBar": true,
@@ -316,7 +316,7 @@
         "weatherShowEffects": true
     },
     "network": {
-        "wifiEnabled": false
+        "wifiEnabled": true
     },
     "nightLight": {
         "autoSchedule": false,
@@ -332,7 +332,7 @@
         "criticalUrgencyDuration": 15,
         "enableKeyboardLayoutToast": true,
         "enabled": true,
-        "location": "top",
+        "location": "bottom",
         "lowUrgencyDuration": 5,
         "monitors": [
         ],
@@ -360,7 +360,7 @@
             3,
             4
         ],
-        "location": "top",
+        "location": "bottom",
         "monitors": [
         ],
         "overlayLayer": true
@@ -470,9 +470,9 @@
         "zed": false
     },
     "ui": {
-        "fontDefault": "Ubuntu",
-        "fontDefaultScale": 1.1,
-        "fontFixed": "Ubuntu Mono",
+        "fontDefault": "Droid Sans",
+        "fontDefaultScale": 1.08,
+        "fontFixed": "Droid Sans Mono",
         "fontFixedScale": 1.25,
         "panelBackgroundOpacity": 1,
         "panelsAttachedToBar": true,
@@ -490,11 +490,11 @@
         ],
         "overviewEnabled": false,
         "panelPosition": "follow_bar",
-        "randomEnabled": true,
+        "randomEnabled": false,
         "randomIntervalSec": 7200,
         "recursiveSearch": false,
         "setWallpaperOnAllMonitors": true,
-        "transitionDuration": 2000,
+        "transitionDuration": 4000,
         "transitionEdgeSmoothness": 0.05,
         "transitionType": "random",
         "useWallhaven": false,

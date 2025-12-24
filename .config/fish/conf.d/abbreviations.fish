@@ -1,15 +1,15 @@
 # pacman/yay
-abbr paci 'yay -S'
-abbr pacun 'yay -Rns'
-abbr pacup 'yay -Syyu'
-abbr pacro 'yay -Rcs (yay -Qdtq)'
-abbr pacs 'yay -Ss'
+abbr ys 'yay -S'
+abbr yrns 'yay -Rnsu'
+abbr ysyu 'yay -Syyu'
+abbr yro 'yay -Rcs (yay -Qdtq)'
+abbr yss 'yay -Ss'
 abbr pacsl 'yay -Qs'
-abbr paccc 'yay -Sc'
-abbr pacinfo 'yay -Si'
-abbr pacq 'yay -Q'
-abbr pacqs 'yay -Qs'
-abbr paccount 'yay -Q | wc -l'
+abbr ycc 'yay -Sc'
+abbr ynfo 'yay -Si'
+abbr yq 'yay -Q'
+abbr yqs 'yay -Qs'
+abbr ycnt 'yay -Q | wc -l'
 
 # git
 abbr g git
