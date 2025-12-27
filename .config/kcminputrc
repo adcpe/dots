@@ -1,8 +1,0 @@
-[Libinput][4152][5922][SteelSeries SteelSeries Sensei 310 eSports Mouse]
-PointerAcceleration=0.200
-PointerAccelerationProfile=1
-
-[Mouse]
-X11LibInputXAccelProfileFlat=true
-cursorSize=48
-cursorTheme=Breeze_Light
