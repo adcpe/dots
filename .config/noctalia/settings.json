@@ -4,6 +4,7 @@
         "customLaunchPrefixEnabled": false,
         "enableClipPreview": true,
         "enableClipboardHistory": true,
+        "iconMode": "tabler",
         "pinnedExecs": [
         ],
         "position": "center",
@@ -19,7 +20,6 @@
         "mprisBlacklist": [
         ],
         "preferredPlayer": "",
-        "visualizerQuality": "high",
         "visualizerType": "none",
         "volumeOverdrive": false,
         "volumeStep": 4
@@ -86,15 +86,15 @@
                     "hideUnoccupied": false,
                     "id": "Workspace",
                     "labelMode": "none",
-                    "showApplications": false,
+                    "showApplications": true,
                     "showLabelsOnlyWhenOccupied": true
                 },
                 {
-                    "colorizeIcons": false,
+                    "colorizeIcons": true,
                     "hideMode": "hidden",
                     "id": "ActiveWindow",
-                    "maxWidth": 400,
-                    "scrollingMode": "always",
+                    "maxWidth": 500,
+                    "scrollingMode": "never",
                     "showIcon": true,
                     "useFixedWidth": true
                 }
@@ -243,7 +243,6 @@
         }
     },
     "desktopWidgets": {
-        "editMode": false,
         "enabled": false,
         "gridSnap": false,
         "monitorWidgets": [
@@ -299,6 +298,8 @@
     "hooks": {
         "darkModeChange": "",
         "enabled": false,
+        "performanceModeDisabled": "",
+        "performanceModeEnabled": "",
         "screenLock": "",
         "screenUnlock": "",
         "wallpaperChange": ""
@@ -316,7 +317,7 @@
         "weatherShowEffects": true
     },
     "network": {
-        "wifiEnabled": true
+        "wifiEnabled": false
     },
     "nightLight": {
         "autoSchedule": false,
@@ -332,7 +333,7 @@
         "criticalUrgencyDuration": 15,
         "enableKeyboardLayoutToast": true,
         "enabled": true,
-        "location": "bottom",
+        "location": "top",
         "lowUrgencyDuration": 5,
         "monitors": [
         ],
@@ -421,7 +422,7 @@
         ],
         "showHeader": true
     },
-    "settingsVersion": 31,
+    "settingsVersion": 32,
     "systemMonitor": {
         "cpuCriticalThreshold": 90,
         "cpuPollingInterval": 3000,
@@ -430,7 +431,7 @@
         "diskCriticalThreshold": 90,
         "diskPollingInterval": 3000,
         "diskWarningThreshold": 80,
-        "enableNvidiaGpu": false,
+        "enableDgpuMonitoring": false,
         "gpuCriticalThreshold": 90,
         "gpuPollingInterval": 3000,
         "gpuWarningThreshold": 80,
@@ -455,6 +456,8 @@
         "fuzzel": true,
         "ghostty": false,
         "gtk": true,
+        "helix": false,
+        "hyprland": false,
         "kcolorscheme": true,
         "kitty": true,
         "mango": false,
@@ -470,6 +473,8 @@
         "zed": false
     },
     "ui": {
+        "bluetoothDetailsViewMode": "grid",
+        "bluetoothHideUnnamedDevices": false,
         "fontDefault": "Droid Sans",
         "fontDefaultScale": 1.08,
         "fontFixed": "Droid Sans Mono",
@@ -477,7 +482,8 @@
         "panelBackgroundOpacity": 1,
         "panelsAttachedToBar": true,
         "settingsPanelMode": "window",
-        "tooltipsEnabled": true
+        "tooltipsEnabled": true,
+        "wifiDetailsViewMode": "grid"
     },
     "wallpaper": {
         "directory": "/home/adc/Wallpapers/Wallhaven",
@@ -502,6 +508,7 @@
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
         "wallhavenQuery": "",
+        "wallhavenRatios": "",
         "wallhavenResolutionHeight": "1080",
         "wallhavenResolutionMode": "exact",
         "wallhavenResolutionWidth": "1920",

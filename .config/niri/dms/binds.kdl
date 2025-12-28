@@ -1,10 +1,10 @@
 binds {
     Super+Alt+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
-    XF86AudioLowerVolume hotkey-overlay-title="Volume Down" { spawn "dms" "ipc" "call" "audio" "decrement" "4"; }
-    XF86AudioRaiseVolume hotkey-overlay-title="Volume Up" { spawn "dms" "ipc" "call" "audio" "increment" "4"; }
-    XF86AudioMute hotkey-overlay-title="Volume Mute Toggle" { spawn "dms" "ipc" "call" "audio" "mute"; }
-    XF86AudioStop hotkey-overlay-title="Media: Stop" { spawn "dms" "ipc" "call" "mpris" "stop"; }
-    XF86AudioPrev hotkey-overlay-title="Media: Previous Track" { spawn "dms" "ipc" "call" "mpris" "previous"; }
-    XF86AudioPlay hotkey-overlay-title="Media: Play/Pause" { spawn "dms" "ipc" "call" "mpris" "playPause"; }
-    XF86AudioNext hotkey-overlay-title="Media: Next Track" { spawn "dms" "ipc" "call" "mpris" "next"; }
+    // XF86AudioLowerVolume hotkey-overlay-title="Volume Down" { spawn "dms" "ipc" "call" "audio" "decrement" "4"; }
+    // XF86AudioRaiseVolume hotkey-overlay-title="Volume Up" { spawn "dms" "ipc" "call" "audio" "increment" "4"; }
+    // XF86AudioMute hotkey-overlay-title="Volume Mute Toggle" { spawn "dms" "ipc" "call" "audio" "mute"; }
+    // XF86AudioStop hotkey-overlay-title="Media: Stop" { spawn "dms" "ipc" "call" "mpris" "stop"; }
+    // XF86AudioPrev hotkey-overlay-title="Media: Previous Track" { spawn "dms" "ipc" "call" "mpris" "previous"; }
+    // XF86AudioPlay hotkey-overlay-title="Media: Play/Pause" { spawn "dms" "ipc" "call" "mpris" "playPause"; }
+    // XF86AudioNext hotkey-overlay-title="Media: Next Track" { spawn "dms" "ipc" "call" "mpris" "next"; }
 }

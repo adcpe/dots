@@ -6,8 +6,8 @@
 // spawn-sh-at-startup "qs -c noctalia-shell"
 // spawn-sh-at-startup "dms run"
 
-// spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 // spawn-sh-at-startup "swayidle -w timeout 120 'niri msg output * power off' resume 'niri msg output * power on' timeout 600 'swaylock -f'"
+spawn-at-startup "gnome-keyring-daemon --start --components=secrets,ssh"
 spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
 spawn-sh-at-startup "wl-paste --type image --watch cliphist store"
 
@@ -29,18 +29,19 @@ environment {
     GTK_USE_PORTAL "1"
     QT_SCALE_FACTOR "1"
     MOZ_ENABLE_WAYLAND "1"
-    QT_QPA_PLATFORM "wayland xcb kdenlive"
+    QT_QPA_PLATFORM "wayland"
     QT_QPA_PLATFORMTHEME "gtk3"
     QT_QPA_PLATFORMTHEME_QT6 "qt6ct"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
+    SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/keyring/ssh"
 }
 
 // ls /usr/share/icons/
 cursor {
-    xcursor-theme "Layan-white-cursors"
+    xcursor-theme "Qogir-Dark"
     xcursor-size 48
     hide-when-typing
-    hide-after-inactive-ms 3000
+    hide-after-inactive-ms 5000
 }
 
 input {
@@ -70,8 +71,6 @@ input {
         accel-profile "flat"
     }
 
-    // warp-mouse-to-focus
-
     focus-follows-mouse // max-scroll-amount="0%"
 }
 
@@ -82,7 +81,7 @@ output "GIGA-BYTE TECHNOLOGY CO., LTD. M27QA FA3T01940000" {
     scale 1
     transform "normal"
     position x=0 y=0
-    variable-refresh-rate // on-demand=true
+    variable-refresh-rate on-demand=true
     focus-at-startup
 }
 // DP-2
@@ -97,27 +96,15 @@ layout {
     gaps 12
     always-center-single-column
 
-    center-focused-column "always"
+    center-focused-column "on-overflow"
 
     preset-column-widths {
         proportion 0.3
-        proportion 0.4
         proportion 0.5
-        proportion 0.6
         proportion 0.7
     }
 
     default-column-width { proportion 0.6; }
-
-    // focus-ring {
-    //     width 4
-
-    //     active-color "#7fc8ff"
-    //     inactive-color "#505050"
-
-    //     active-gradient from="#74B4ED" to="#B4ED74" angle=45
-    //     inactive-gradient from="#E3F0FB" to="#F0FBE3" angle=45 relative-to="workspace-view"
-    // }
 }
 
 xwayland-satellite {
@@ -138,13 +125,13 @@ window-rule {
     match app-id="steam"
     match app-id="vesktop"
     match app-id="vlc"
-    match app-id="obs"
+    match app-id="obs" title="OBS Studio"
     default-column-width { proportion 0.9; }
 }
 
 window-rule {
     match app-id="kitty"
-    default-column-width { proportion 0.5; }
+    default-column-width { proportion 0.4; }
 }
 
 window-rule {
@@ -155,6 +142,14 @@ window-rule {
     focus-ring {
         off
     }
+}
+
+window-rule {
+    match app-id="com.obsproject.Studio"
+    match title="!OBS"
+    match is-floating=true
+    open-floating false
+    default-column-width { proportion 0.5; }
 }
 
 window-rule {
@@ -184,22 +179,23 @@ binds {
     Super+B { spawn "firefox"; }
 
     // Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
-    Super+E hotkey-overlay-title="Open file manager: nemo" cooldown-ms=1000 { spawn "nemo"; }
-    Super+T hotkey-overlay-title="Open a Terminal: kitty" cooldown-ms=1000 { spawn "kitty"; }
+    Super+E hotkey-overlay-title="Open file manager: nautilus" cooldown-ms=1000 { spawn "nautilus"; }
     Super+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+    Super+T hotkey-overlay-title="Open a Terminal: kitty" cooldown-ms=1000 { spawn "kitty"; }
+    Super+Return hotkey-overlay-title="Open a Terminal: kitty" cooldown-ms=1000 { spawn "kitty"; }
 
     // TOGGLE ORCA SCREEN READER
     Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
 
     // MEDIA KEYS
-    // XF86AudioPlay        allow-when-locked=true { spawn-sh "playerctl play-pause"; }
-    // XF86AudioStop        allow-when-locked=true { spawn-sh "playerctl stop"; }
-    // XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
-    // XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
-    // XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.04+ -l 1.0"; }
-    // XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.04-"; }
-    // XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
-    // XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
+    XF86AudioPlay        allow-when-locked=true { spawn-sh "playerctl play-pause"; }
+    XF86AudioStop        allow-when-locked=true { spawn-sh "playerctl stop"; }
+    XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
+    XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.04+ -l 1.0"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.04-"; }
+    XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
+    XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
 
     // SCREEN BRIGHTNESS
     XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+5%"; }
@@ -250,14 +246,16 @@ binds {
     Mod+Ctrl+End  { move-column-to-last; }
 
 
-    Mod+Shift+Ctrl+Left  { move-column-to-monitor-left; }
-    Mod+Shift+Ctrl+Down  { move-column-to-monitor-down; }
-    Mod+Shift+Ctrl+Up    { move-column-to-monitor-up; }
-    Mod+Shift+Ctrl+Right { move-column-to-monitor-right; }
-    Mod+Shift+Ctrl+H     { move-column-to-monitor-left; }
-    Mod+Shift+Ctrl+J     { move-column-to-monitor-down; }
-    Mod+Shift+Ctrl+K     { move-column-to-monitor-up; }
-    Mod+Shift+Ctrl+L     { move-column-to-monitor-right; }
+    Mod+Shift+Ctrl+Left                 { move-column-to-monitor-left; }
+    Mod+Shift+Ctrl+Down                 { move-column-to-monitor-down; }
+    Mod+Shift+Ctrl+Up                   { move-column-to-monitor-up; }
+    Mod+Shift+Ctrl+Right                { move-column-to-monitor-right; }
+    Mod+Shift+Ctrl+H                    { move-column-to-monitor-left; }
+    Mod+Shift+Ctrl+J                    { move-column-to-monitor-down; }
+    Mod+Shift+Ctrl+K                    { move-column-to-monitor-up; }
+    Mod+Shift+Ctrl+L                    { move-column-to-monitor-right; }
+    Mod+Shift+Alt+WheelScrollUp         { move-column-to-monitor-left; }
+    Mod+Shift+Alt+WheelScrollDown       { move-column-to-monitor-right; }
 
     // Alternatively, there are commands to move just a single window:
     // Mod+Shift+Ctrl+Left  { move-window-to-monitor-left; }
@@ -440,9 +438,9 @@ binds {
     Mod+Q repeat=false { close-window; }
 }
 
-include "dms/alttab.kdl"
-include "dms/binds.kdl"
-include "dms/colors.kdl"
 // include "dms/layout.kdl"
-include "dms/wpblur.kdl"
-// include "./noctalia.kdl"
+//include "dms/alttab.kdl"
+//include "dms/binds.kdl"
+//include "dms/colors.kdl"
+//include "dms/wpblur.kdl"
+include "./noctalia.kdl"
