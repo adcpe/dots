@@ -96,11 +96,3 @@ abbr cls 'colorls --group-directories-first '
 abbr cla 'colorls --group-directories-first --all --long'
 abbr cll 'colorls --group-directories-first --long --git-status'
 abbr clla 'colorls --group-directories-first --long --all --git-status'
-
-# various
-abbr c code
-abbr cat bat
-abbr man batman
-abbr nv nvim
-abbr rm trash
-abbr v vim
