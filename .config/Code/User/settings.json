@@ -525,7 +525,7 @@
       "path": "/usr/bin/qtpaths"
     }
   ],
-  "workbench.colorTheme": "Twin Black",
+  "workbench.colorTheme": "Dynamic Base16 DankShell (Dark)",
   "workbench.colorCustomizations": {
     "[Dynamic Base16 DankShell]": {
       "foreground": "#e9e1db",

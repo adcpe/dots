@@ -19,6 +19,8 @@ esbenp.prettier-vscode
 formulahendry.code-runner
 foxundermoon.shell-format
 ginfuru.better-nunjucks
+github.copilot
+github.copilot-chat
 github.vscode-pull-request-github
 golang.go
 golf1052.base16-generator
