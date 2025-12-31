@@ -52,22 +52,22 @@
     {
       "id": "volumeSlider",
       "enabled": true,
-      "width": 50
+      "width": 100
+    },
+    {
+      "id": "inputVolumeSlider",
+      "enabled": true,
+      "width": 100
     },
     {
       "id": "brightnessSlider",
       "enabled": true,
-      "width": 50
+      "width": 100
     },
     {
-      "id": "wifi",
+      "id": "idleInhibitor",
       "enabled": true,
-      "width": 50
-    },
-    {
-      "id": "bluetooth",
-      "enabled": true,
-      "width": 50
+      "width": 100
     },
     {
       "id": "audioOutput",
@@ -80,12 +80,22 @@
       "width": 50
     },
     {
-      "id": "nightMode",
+      "id": "bluetooth",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "wifi",
       "enabled": true,
       "width": 50
     },
     {
       "id": "darkMode",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "nightMode",
       "enabled": true,
       "width": 50
     }
@@ -96,7 +106,7 @@
   "showWorkspaceApps": true,
   "maxWorkspaceIcons": 3,
   "workspacesPerMonitor": true,
-  "showOccupiedWorkspacesOnly": false,
+  "showOccupiedWorkspacesOnly": true,
   "dwlShowAllTags": false,
   "workspaceNameIcons": {},
   "waveProgressEnabled": true,
@@ -122,8 +132,8 @@
   "useAutoLocation": false,
   "weatherEnabled": true,
   "networkPreference": "wifi",
-  "vpnLastConnected": "67a5bb5a-b3ad-4ebf-bdf7-1734bc78d9e7",
-  "iconTheme": "Qogir",
+  "vpnLastConnected": "1733eb5e-a0b8-4c96-839a-78fa3a7ef41c",
+  "iconTheme": "Tela-circle",
   "launcherLogoMode": "os",
   "launcherLogoCustomPath": "",
   "launcherLogoColorOverride": "primary",
@@ -131,8 +141,8 @@
   "launcherLogoBrightness": 0.5,
   "launcherLogoContrast": 1,
   "launcherLogoSizeOffset": 0,
-  "fontFamily": "Adwaita Sans",
-  "monoFontFamily": "Adwaita Mono",
+  "fontFamily": "Bitstream Vera Sans",
+  "monoFontFamily": "Bitstream Vera Sans Mono",
   "fontWeight": 400,
   "fontScale": 1.11,
   "notepadUseMonospace": true,
@@ -208,7 +218,7 @@
   "osdCapsLockEnabled": true,
   "osdPowerProfileEnabled": true,
   "osdAudioOutputEnabled": true,
-  "powerActionConfirm": false,
+  "powerActionConfirm": true,
   "powerActionHoldDuration": 1,
   "powerMenuActions": [
     "reboot",
@@ -254,8 +264,7 @@
       "centerWidgets": [
         {
           "id": "clock",
-          "enabled": true,
-          "clockCompactMode": false
+          "enabled": true
         },
         {
           "id": "weather",
@@ -290,15 +299,15 @@
         }
       ],
       "spacing": 0,
-      "innerPadding": 2,
+      "innerPadding": 0,
       "bottomGap": 0,
-      "transparency": 0.75,
+      "transparency": 0.6,
       "widgetTransparency": 0,
       "squareCorners": true,
       "noBackground": false,
       "gothCornersEnabled": false,
       "gothCornerRadiusOverride": false,
-      "gothCornerRadiusValue": 12,
+      "gothCornerRadiusValue": 0,
       "borderEnabled": false,
       "borderColor": "primary",
       "borderOpacity": 1,
@@ -312,7 +321,7 @@
       "autoHideDelay": 250,
       "openOnOverview": true,
       "visible": true,
-      "popupGapsAuto": false,
+      "popupGapsAuto": true,
       "popupGapsManual": 10,
       "maximizeDetection": true
     }

@@ -1,103 +1,52 @@
-"$schema" = "https://starship.rs/config-schema.json"
+"$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
+$username\
+$hostname\
 $directory\
 $git_branch\
-$git_commit\
 $git_state\
-$git_metrics\
 $git_status\
-$fill\
-$username\
-[@](bold fg:bright-white)\
-$hostname\
-$shell\
-$character
-"""
-
-add_newline = true
-
-[fill]
-symbol = " "
-
-[line_break]
-disabled = true
-
-[username]
-disabled = false
-style_user = "bold bright-green"
-format = "[$user]($style)"
-show_always = true
-
-[hostname]
-disabled = false
-ssh_only = false
-style = "bold bright-green"
-format = "[$hostname]($style)"
-
-[shell]
-disabled = false
-format = " [$indicator]($style)"
-style = "bold red"
-bash_indicator = "[bash](bold bright-red)"
-fish_indicator = "[fish](bold bright-blue)"
-zsh_indicator = "[zsh](bold bright-green)"
+$cmd_duration\
+$line_break\
+$python\
+$character"""
 
 [directory]
-home_symbol = "~"
+style = "blue"
 truncation_length = 0
 truncate_to_repo = false
-style = "bold bright-yellow"
-use_logical_path = true
-fish_style_pwd_dir_length = 1
-format = "[$path]($style)"
-
-[git_branch]
-disabled = false
-format = " [$symbol$branch(:$remote_branch)]($style)"
-only_attached = false
-style = "bold bright-blue"
-
-[git_commit]
-disabled = false
-format = " [$hash$tag]($style)"
-only_detached = true
-style = "bold bright-blue"
-
-[git_state]
-disabled = false
-format = " [$state( $progress_current/$progress_total)]($style)"
-style = "bold bright-blue"
-
-[git_metrics]
-disabled = false
-added_style = "bold bright-blue"
-deleted_style = "bold bright-blue"
-format = " ([+$added]($added_style)) ([-$deleted]($deleted_style))"
-
-[git_status]
-disabled = false
-format = " ([$all_status$ahead_behind]($style))"
-ignore_submodules = false
-style = "bold bright-blue"
 
 [character]
-format = "$symbol "
-success_symbol = "[\n❯](bold bright-green)"
-error_symbol = "[\n❯](bold bright-red)"
-vimcmd_replace_one_symbol = "[\n❮](bold bright-purple)"
-vimcmd_replace_symbol = "[\n❮](bold bright-purple)"
-vimcmd_symbol = "[\n❮](bold bright-green)"
-vimcmd_visual_symbol = "[\n❮](bold bright-yellow)"
+success_symbol = "[❯](purple)"
+error_symbol = "[❯](red)"
+vimcmd_symbol = "[❮](green)"
 
-[package]
-disabled = false
+[git_branch]
+format = "[$branch]($style)"
+style = "bright-black"
 
-[nodejs]
-disabled = true
+[git_status]
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
+style = "cyan"
+conflicted = "​"
+untracked = "​"
+modified = "​"
+staged = "​"
+renamed = "​"
+deleted = "​"
+stashed = "≡"
 
-[php]
-disabled = true
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "bright-black"
+
+[cmd_duration]
+format = "[$duration]($style) "
+style = "yellow"
 
 [python]
-disabled = true
+format = "[$virtualenv]($style) "
+style = "bright-black"
+detect_extensions = []
+detect_files = []
