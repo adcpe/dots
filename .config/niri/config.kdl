@@ -135,6 +135,7 @@ window-rule {
 
 window-rule {
     match app-id="kitty"
+    match app-id="helium"
     default-column-width { proportion 0.5; }
 }
 

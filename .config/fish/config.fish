@@ -1,4 +1,4 @@
-# fish_vi_key_bindings
+fish_vi_key_bindings
 
 if type -q starship
     starship init fish | source

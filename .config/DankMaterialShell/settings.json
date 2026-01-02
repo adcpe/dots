@@ -131,7 +131,7 @@
   "weatherCoordinates": "-12.0002116,-76.8330796",
   "useAutoLocation": false,
   "weatherEnabled": true,
-  "networkPreference": "wifi",
+  "networkPreference": "ethernet",
   "vpnLastConnected": "1733eb5e-a0b8-4c96-839a-78fa3a7ef41c",
   "iconTheme": "Tela-circle",
   "launcherLogoMode": "os",
