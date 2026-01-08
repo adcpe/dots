@@ -17,7 +17,7 @@
   "customAnimationDuration": 500,
   "wallpaperFillMode": "Fill",
   "blurredWallpaperLayer": false,
-  "blurWallpaperOnOverview": false,
+  "blurWallpaperOnOverview": true,
   "showLauncherButton": true,
   "showWorkspaceSwitcher": true,
   "showFocusedWindow": true,
@@ -90,12 +90,12 @@
       "width": 50
     },
     {
-      "id": "darkMode",
+      "id": "nightMode",
       "enabled": true,
       "width": 50
     },
     {
-      "id": "nightMode",
+      "id": "darkMode",
       "enabled": true,
       "width": 50
     }
@@ -132,7 +132,7 @@
   "useAutoLocation": false,
   "weatherEnabled": true,
   "networkPreference": "ethernet",
-  "vpnLastConnected": "1733eb5e-a0b8-4c96-839a-78fa3a7ef41c",
+  "vpnLastConnected": "759666b9-667f-4c30-8475-dcfb3f13edd2",
   "iconTheme": "Tela-circle",
   "launcherLogoMode": "os",
   "launcherLogoCustomPath": "",
@@ -141,10 +141,10 @@
   "launcherLogoBrightness": 0.5,
   "launcherLogoContrast": 1,
   "launcherLogoSizeOffset": 0,
-  "fontFamily": "Bitstream Vera Sans",
-  "monoFontFamily": "Bitstream Vera Sans Mono",
+  "fontFamily": "Ubuntu",
+  "monoFontFamily": "Ubuntu Mono",
   "fontWeight": 400,
-  "fontScale": 1.11,
+  "fontScale": 1,
   "notepadUseMonospace": true,
   "notepadFontFamily": "",
   "notepadFontSize": 14,
@@ -187,13 +187,13 @@
   "dockGroupByApp": false,
   "dockOpenOnOverview": true,
   "dockPosition": 1,
-  "dockSpacing": 5,
+  "dockSpacing": 8,
   "dockBottomGap": 0,
   "dockMargin": 0,
   "dockIconSize": 40,
   "dockIndicatorStyle": "line",
   "dockBorderEnabled": false,
-  "dockBorderColor": "surfaceText",
+  "dockBorderColor": "primary",
   "dockBorderOpacity": 1,
   "dockBorderThickness": 1,
   "notificationOverlayEnabled": false,
@@ -264,11 +264,8 @@
       "centerWidgets": [
         {
           "id": "clock",
-          "enabled": true
-        },
-        {
-          "id": "weather",
-          "enabled": true
+          "enabled": true,
+          "clockCompactMode": false
         }
       ],
       "rightWidgets": [
@@ -299,7 +296,7 @@
         }
       ],
       "spacing": 0,
-      "innerPadding": 0,
+      "innerPadding": -5,
       "bottomGap": 0,
       "transparency": 0.6,
       "widgetTransparency": 0,

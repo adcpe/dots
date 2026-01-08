@@ -25,6 +25,11 @@ gestures {
     }
 }
 
+overview {
+    zoom 0.4
+    backdrop-color "#2A2D2C"
+}
+
 environment {
     GTK_USE_PORTAL "1"
     QT_SCALE_FACTOR "1"
@@ -41,7 +46,7 @@ cursor {
     xcursor-theme "Qogir-Dark"
     xcursor-size 48
     hide-when-typing
-    // hide-after-inactive-ms 5000
+    hide-after-inactive-ms 3000
 }
 
 input {
@@ -93,7 +98,7 @@ output "Dell Inc. DELL U2312HM T9MJ323E732L" {
 }
 
 layout {
-    gaps 15
+    gaps 12
     always-center-single-column
 
     center-focused-column "on-overflow"
@@ -114,7 +119,7 @@ xwayland-satellite {
 screenshot-path "~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png"
 
 window-rule {
-    geometry-corner-radius 5
+    geometry-corner-radius 8
     clip-to-geometry true
 }
 
@@ -130,6 +135,7 @@ window-rule {
     match app-id="steam" title="steam"
     match app-id="vesktop"
     match title="OBS"
+    match title="TIDAL"
     default-column-width { proportion 0.9; }
 }
 
@@ -178,13 +184,12 @@ binds {
     // APP SHORTCUTS
     Super+Shift+Slash { show-hotkey-overlay; }
 
-    Super+B { spawn "firefox"; }
-
     // Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
-    Super+E hotkey-overlay-title="Open file manager: nautilus" cooldown-ms=1000 { spawn "nautilus"; }
+    Super+B hotkey-overlay-title="Browser: firefox" { spawn "firefox"; }
+    Super+E hotkey-overlay-title="File manager: nautilus" cooldown-ms=1000 { spawn "nautilus"; }
     Super+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Super+T hotkey-overlay-title="Open a Terminal: kitty" cooldown-ms=1000 { spawn "kitty"; }
-    Super+Return hotkey-overlay-title="Open a Terminal: kitty" cooldown-ms=1000 { spawn "kitty"; }
+    Super+T hotkey-overlay-title="Terminal: kitty" cooldown-ms=1000 { spawn "kitty"; }
+    Super+Return hotkey-overlay-title="Terminal: kitty" cooldown-ms=1000 { spawn "kitty"; }
 
     // TOGGLE ORCA SCREEN READER
     Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
@@ -437,7 +442,7 @@ binds {
     // or do a four-finger swipe up on a touchpad.
     Mod+W repeat=false { toggle-overview; }
 
-    Mod+Q repeat=false { close-window; }
+    Alt+F4 repeat=false { close-window; }
 }
 
 include "dms/alttab.kdl"
