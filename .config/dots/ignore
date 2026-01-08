@@ -1,9 +1,0 @@
-# dotfiles git folder
-.config/dots/git/
-
-# fish files
-aur.fish
-fish_variables
-
-# asdf install folders
-.config/asdf/**/

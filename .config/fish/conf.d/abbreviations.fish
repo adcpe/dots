@@ -37,6 +37,7 @@ abbr gd 'git diff'
 abbr gl 'git ll'
 
 # dotfiles bare repo at $HOME
+abbr lazydots 'lazygit --git-dir=$HOME/.config/dots/git --work-tree=$HOME'
 abbr da 'dots add'
 abbr dai 'dots add --interactive'
 abbr ddf 'dots diff'

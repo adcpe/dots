@@ -23,5 +23,5 @@ end
 set --erase _asdf_shims
 
 if type -q fastfetch
-    fastfetch -c ~/.config/fastfetch/config-small.jsonc
+    fastfetch -c examples/13.jsonc
 end
