@@ -1,8 +1,3 @@
-// This config is in the KDL format: https://kdl.dev
-// "/-" comments out the following node.
-// Check the wiki for a full description of the configuration:
-// https://yalter.github.io/niri/Configuration:-Introduction
-
 // spawn-sh-at-startup "qs -c noctalia-shell"
 // spawn-sh-at-startup "dms run"
 
@@ -35,18 +30,18 @@ environment {
     QT_SCALE_FACTOR "1"
     MOZ_ENABLE_WAYLAND "1"
     QT_QPA_PLATFORM "wayland"
-    QT_QPA_PLATFORMTHEME "gtk3"
+    QT_QPA_PLATFORMTHEME "qt6ct"
     QT_QPA_PLATFORMTHEME_QT6 "qt6ct"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
     SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/keyring/ssh"
 }
 
-// ls /usr/share/icons/
+// eza /usr/share/icons/
 cursor {
     xcursor-theme "Qogir-Dark"
     xcursor-size 48
     hide-when-typing
-    hide-after-inactive-ms 3000
+    hide-after-inactive-ms 5000
 }
 
 input {
@@ -101,6 +96,14 @@ layout {
     gaps 12
     always-center-single-column
 
+    focus-ring {
+        width 2
+    }
+
+    border {
+        width 2
+    }
+
     center-focused-column "on-overflow"
 
     preset-column-widths {
@@ -109,7 +112,7 @@ layout {
         proportion 0.7
     }
 
-    default-column-width { proportion 0.7; }
+    default-column-width { proportion 0.8; }
 }
 
 xwayland-satellite {
@@ -119,7 +122,7 @@ xwayland-satellite {
 screenshot-path "~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png"
 
 window-rule {
-    geometry-corner-radius 8
+    geometry-corner-radius 4
     clip-to-geometry true
 }
 
@@ -156,10 +159,22 @@ window-rule {
 }
 
 window-rule {
+    match app-id="Calculator"
+    open-floating true
+}
+
+window-rule {
     match app-id="firefox$" title="^Picture-in-Picture$"
     open-floating true
     default-column-width { fixed 640; }
     default-window-height { fixed 360; }
+}
+
+window-rule {
+    match app-id="xdg-desktop-portal-gtk"
+    open-floating true
+    default-column-width { proportion 0.5; }
+    default-window-height { proportion 0.5; }
 }
 
 window-rule {
@@ -186,7 +201,7 @@ binds {
 
     // Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Super+B hotkey-overlay-title="Browser: firefox" { spawn "firefox"; }
-    Super+E hotkey-overlay-title="File manager: nautilus" cooldown-ms=1000 { spawn "nautilus"; }
+    Super+E hotkey-overlay-title="File manager: thunar" cooldown-ms=1000 { spawn "thunar"; }
     Super+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+T hotkey-overlay-title="Terminal: kitty" cooldown-ms=1000 { spawn "kitty"; }
     Super+Return hotkey-overlay-title="Terminal: kitty" cooldown-ms=1000 { spawn "kitty"; }

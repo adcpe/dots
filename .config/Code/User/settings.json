@@ -722,5 +722,6 @@
         }
       ]
     }
-  }
+  },
+  "qt-qml.qmlls.useQmlImportPathEnvVar": true
 }

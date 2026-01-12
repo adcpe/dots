@@ -7,7 +7,6 @@ abbr yss 'yay -Ss'
 abbr pacsl 'yay -Qs'
 abbr ycc 'yay -Sc'
 abbr ynfo 'yay -Si'
-abbr yq 'yay -Q'
 abbr yqs 'yay -Qs'
 abbr ycnt 'yay -Q | wc -l'
 
