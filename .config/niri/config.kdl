@@ -2,9 +2,9 @@
 // spawn-sh-at-startup "dms run"
 
 // spawn-sh-at-startup "swayidle -w timeout 120 'niri msg output * power off' resume 'niri msg output * power on' timeout 600 'swaylock -f'"
+// spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
+// spawn-sh-at-startup "wl-paste --type image --watch cliphist store"
 spawn-at-startup "gnome-keyring-daemon --start --components=secrets,ssh"
-spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
-spawn-sh-at-startup "wl-paste --type image --watch cliphist store"
 
 // remove native decorations
 prefer-no-csd
@@ -30,18 +30,10 @@ environment {
     QT_SCALE_FACTOR "1"
     MOZ_ENABLE_WAYLAND "1"
     QT_QPA_PLATFORM "wayland"
-    QT_QPA_PLATFORMTHEME "qt6ct"
-    QT_QPA_PLATFORMTHEME_QT6 "qt6ct"
+    QT_QPA_PLATFORMTHEME "gtk3"
+    QT_QPA_PLATFORMTHEME_QT6 "qt6"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
     SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/keyring/ssh"
-}
-
-// eza /usr/share/icons/
-cursor {
-    xcursor-theme "Qogir-Dark"
-    xcursor-size 48
-    hide-when-typing
-    hide-after-inactive-ms 5000
 }
 
 input {
@@ -74,34 +66,32 @@ input {
     focus-follows-mouse // max-scroll-amount="0%"
 }
 
-// `niri msg outputs`
+// niri msg outputs
 // DP-1
 output "GIGA-BYTE TECHNOLOGY CO., LTD. M27QA FA3T01940000" {
     mode "2560x1440@180.000"
     scale 1
-    transform "normal"
     position x=0 y=0
     variable-refresh-rate on-demand=true
-    focus-at-startup
 }
-// DP-2
+
+// DP-4
 output "Dell Inc. DELL U2312HM T9MJ323E732L" {
     mode "1920x1080@60.000"
     scale 1
-    transform "normal"
     position x=2560 y=360
 }
 
 layout {
-    gaps 12
+    gaps 8
     always-center-single-column
 
     focus-ring {
-        width 2
+        width 1
     }
 
     border {
-        width 2
+        width 1
     }
 
     center-focused-column "on-overflow"
@@ -144,6 +134,7 @@ window-rule {
 
 window-rule {
     match app-id="kitty"
+    match app-id="ghostty"
     match app-id="helium"
     default-column-width { proportion 0.5; }
 }
@@ -183,7 +174,6 @@ window-rule {
 }
 
 // Example: block out two password managers from screen capture.
-// (This example rule is commented out with a "/-" in front.)
 /-window-rule {
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
     match app-id=r#"^org\.gnome\.World\.Secrets$"#
@@ -462,7 +452,10 @@ binds {
 
 include "dms/alttab.kdl"
 include "dms/binds.kdl"
-include "dms/wpblur.kdl"
 include "dms/colors.kdl"
+include "dms/cursor.kdl"
 // include "dms/layout.kdl"
+// include "dms/outputs.kdl"
+include "dms/wpblur.kdl"
+
 // include "./noctalia.kdl"

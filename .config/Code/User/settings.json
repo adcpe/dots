@@ -1,4 +1,5 @@
 {
+  "workbench.colorTheme": "Dynamic Base16 DankShell (Dark)",
   "workbench.iconTheme": "catppuccin-mocha",
   "workbench.productIconTheme": "material-product-icons",
   "workbench.tree.renderIndentGuides": "none",
@@ -525,7 +526,6 @@
       "path": "/usr/bin/qtpaths"
     }
   ],
-  "workbench.colorTheme": "Dynamic Base16 DankShell (Dark)",
   "workbench.colorCustomizations": {
     "[Dynamic Base16 DankShell]": {
       "foreground": "#e9e1db",

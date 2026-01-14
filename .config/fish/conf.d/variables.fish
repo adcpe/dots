@@ -6,14 +6,14 @@ set -Ux VISUAL code
 set -Ux EDITOR nano
 set -Ux XDG_CONFIG_HOME $HOME/.config
 
-set -Ux GTK_USE_PORTAL 1
-set -Ux QT_SCALE_FACTOR 1
-set -Ux MOZ_ENABLE_WAYLAND 1
+# set -Ux GTK_USE_PORTAL 1
+# set -Ux QT_SCALE_FACTOR 1
+# set -Ux MOZ_ENABLE_WAYLAND 1
 set -Ux QT_QPA_PLATFORM wayland
 # set -Ux QT_QPA_PLATFORMTHEME gtk3
-set -Ux QT_QPA_PLATFORMTHEME qt6ct
-set -Ux QT_QPA_PLATFORMTHEME_QT6 qt6ct
-set -Ux ELECTRON_OZONE_PLATFORM_HINT auto
+# set -Ux QT_QPA_PLATFORMTHEME qt6ct
+# set -Ux QT_QPA_PLATFORMTHEME_QT6 qt6ct
+# set -Ux ELECTRON_OZONE_PLATFORM_HINT auto
 
 set -Ux ASDF_DIR $HOME/.config/asdf/.asdf
 set -Ux ASDF_DATA_DIR $HOME/.config/asdf

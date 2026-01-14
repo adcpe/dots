@@ -11,6 +11,7 @@ bradlc.vscode-tailwindcss
 brittanychiang.halcyon-vscode
 catppuccin.catppuccin-vsc
 catppuccin.catppuccin-vsc-icons
+danklinux.dms-theme
 dracula-theme.theme-dracula
 dsznajder.es7-react-js-snippets
 eamodio.gitlens
@@ -24,7 +25,6 @@ golang.go
 golf1052.base16-generator
 hyprluna.hyprluna-theme
 kdl-org.kdl
-local.dynamic-base16-dankshell
 mads-hartmann.bash-ide-vscode
 mikestead.dotenv
 ms-azuretools.vscode-containers
