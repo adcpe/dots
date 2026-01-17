@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Dynamic Base16 DankShell (Dark)",
+  "workbench.colorTheme": "Twin Black",
   "workbench.iconTheme": "catppuccin-mocha",
   "workbench.productIconTheme": "material-product-icons",
   "workbench.tree.renderIndentGuides": "none",
@@ -16,11 +16,11 @@
   "terminal.integrated.defaultProfile.linux": "fish",
 
   // fonts, etc
-  "editor.fontFamily": "Hack, IBM Plex Mono, Cascadia Code NF, Noto Sans Mono, Inconsolata, Mononoki Nerd Font, Iosevka, Fira Mono, VictorMono Nerd Font",
+  "editor.fontFamily": "APL385 Unicode, Hack, IBM Plex Mono, Cascadia Code NF, Noto Sans Mono, Inconsolata, Mononoki Nerd Font, Iosevka, Fira Mono, VictorMono Nerd Font, Maple Mono Normal",
   "editor.fontWeight": "400",
   "editor.fontSize": 20,
   "editor.fontLigatures": false,
-  "editor.lineHeight": 26,
+  "editor.lineHeight": 25,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.wordWrap": "on",

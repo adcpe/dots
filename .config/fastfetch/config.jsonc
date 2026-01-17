@@ -179,6 +179,9 @@
       "keyIcon": ""
     },
     {
+      "type": "terminalfont"
+    },
+    {
       "type": "cpu",
       "keyIcon": "",
       "temp": false,

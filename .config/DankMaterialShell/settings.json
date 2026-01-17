@@ -1,9 +1,11 @@
 {
   "currentThemeName": "dynamic",
-  "currentThemeCategory": "dynamic",
-  "customThemeFile": "",
-  "registryThemeVariants": {},
-  "matugenScheme": "scheme-expressive",
+  "currentThemeCategory": "registry",
+  "customThemeFile": "/home/adc/.config/DankMaterialShell/themes/gruvboxMaterial/theme.json",
+  "registryThemeVariants": {
+    "gruvboxMaterial": "hard"
+  },
+  "matugenScheme": "scheme-tonal-spot",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 1,
@@ -173,7 +175,7 @@
   "clockDateFormat": "yyyy-MM-dd",
   "lockDateFormat": "yyyy-MM-dd",
   "mediaSize": 1,
-  "appLauncherViewMode": "grid",
+  "appLauncherViewMode": "list",
   "spotlightModalViewMode": "list",
   "sortAppsAlphabetically": false,
   "appLauncherGridColumns": 5,
@@ -182,10 +184,10 @@
   "useAutoLocation": false,
   "weatherEnabled": true,
   "networkPreference": "ethernet",
-  "vpnLastConnected": "5ab3f066-f0a3-4ffc-81c2-8984ca305d5c",
+  "vpnLastConnected": "b33c500e-8dc2-4ef0-9659-b4423e347328",
   "iconTheme": "Qogir",
   "cursorSettings": {
-    "theme": "Qogir-Dark",
+    "theme": "Qogir-Ubuntu-Dark",
     "size": 64,
     "niri": {
       "hideWhenTyping": true,
@@ -210,7 +212,7 @@
   "fontFamily": "Ubuntu",
   "monoFontFamily": "Ubuntu Mono",
   "fontWeight": 400,
-  "fontScale": 1,
+  "fontScale": 1.05,
   "notepadUseMonospace": true,
   "notepadFontFamily": "",
   "notepadFontSize": 14,
@@ -250,7 +252,7 @@
   "gtkThemingEnabled": false,
   "qtThemingEnabled": false,
   "syncModeWithPortal": true,
-  "terminalsAlwaysDark": true,
+  "terminalsAlwaysDark": false,
   "runDmsMatugenTemplates": true,
   "matugenTemplateGtk": true,
   "matugenTemplateNiri": true,
@@ -306,9 +308,9 @@
   "notificationTimeoutCritical": 15000,
   "notificationCompactMode": false,
   "notificationPopupPosition": -1,
-  "notificationHistoryEnabled": true,
+  "notificationHistoryEnabled": false,
   "notificationHistoryMaxCount": 50,
-  "notificationHistoryMaxAgeDays": 7,
+  "notificationHistoryMaxAgeDays": 1,
   "notificationHistorySaveLow": true,
   "notificationHistorySaveNormal": true,
   "notificationHistorySaveCritical": true,
@@ -383,7 +385,7 @@
         {
           "id": "music",
           "enabled": true,
-          "mediaSize": 2
+          "mediaSize": 3
         },
         {
           "id": "systemTray",
@@ -403,7 +405,18 @@
         },
         {
           "id": "controlCenterButton",
-          "enabled": true
+          "enabled": true,
+          "showNetworkIcon": true,
+          "showBluetoothIcon": true,
+          "showAudioIcon": true,
+          "showAudioPercent": false,
+          "showVpnIcon": true,
+          "showBrightnessIcon": true,
+          "showBrightnessPercent": false,
+          "showMicIcon": true,
+          "showMicPercent": false,
+          "showBatteryIcon": true,
+          "showPrinterIcon": false
         }
       ],
       "spacing": 0,
@@ -433,7 +446,8 @@
       "popupGapsManual": 10,
       "maximizeDetection": true,
       "shadowIntensity": 0,
-      "scrollEnabled": true
+      "scrollEnabled": true,
+      "scrollYBehavior": "workspace"
     }
   ],
   "desktopClockEnabled": false,
@@ -507,6 +521,10 @@
   "desktopWidgetGridSettings": {},
   "desktopWidgetInstances": [],
   "desktopWidgetGroups": [],
-  "builtInPluginSettings": {},
+  "builtInPluginSettings": {
+    "dms_settings_search": {
+      "trigger": "?"
+    }
+  },
   "configVersion": 5
 }

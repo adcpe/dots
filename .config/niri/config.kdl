@@ -66,19 +66,22 @@ input {
     focus-follows-mouse // max-scroll-amount="0%"
 }
 
-// niri msg outputs
+// `niri msg outputs`
 // DP-1
 output "GIGA-BYTE TECHNOLOGY CO., LTD. M27QA FA3T01940000" {
     mode "2560x1440@180.000"
     scale 1
+    transform "normal"
     position x=0 y=0
     variable-refresh-rate on-demand=true
+    focus-at-startup
 }
 
 // DP-4
 output "Dell Inc. DELL U2312HM T9MJ323E732L" {
     mode "1920x1080@60.000"
     scale 1
+    transform "normal"
     position x=2560 y=360
 }
 
